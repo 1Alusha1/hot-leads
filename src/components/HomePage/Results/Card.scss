@@ -1,0 +1,195 @@
+.result-card {
+  width: VW(400);
+  height: VW(600);
+  position: relative;
+  // overflow: hidden;
+  // clip-path: polygon(44% 0, 50.8% 5.1%, 100% 5.3%, 100% 100%, 70% 110%, 35% 100%, 0 100%, 0 0);
+  backdrop-filter: blur(1vw);
+  // border-radius: VW(14);
+
+  background-size: contain !important;
+  mask-image: url("/images/results/mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+
+  @include forMobile {
+    width: VW(300, $mobile);
+    height: VW(450, $mobile);
+  }
+
+  .result-card-wrapper {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+  }
+
+  &--sell {
+    background: url("/images/results/red-bg.svg") no-repeat center;
+
+    --card-color: #ff2400;
+    .result-card__title {
+      color: $r-70;
+    }
+  }
+
+  &--buy {
+    background: url("/images/results/green-bg.svg") no-repeat center center;
+    --card-color: #00cf3c;
+    .result-card__title {
+      color: $green-100;
+    }
+    
+    &--buy {
+      background:  no-repeat center center;
+      --card-color: #00cf3c;
+      .result-card__title {
+        color: $green-100;
+      }
+    }
+  }
+
+  .card-wrapper {
+    padding: VW(14) VW(24);
+
+    @include forMobile {
+      padding: VW(14, $mobile);
+    }
+  }
+
+  &__title {
+    padding: VW(14) VW(24) VW(24);
+    @include forMobile {
+      padding: VW(14, $mobile) VW(14, $mobile) 0;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    padding-bottom: VW(14);
+    border-bottom: VW(2) solid $g-90;
+
+    .left {
+      width: VW(140);
+
+      @include forMobile {
+        width: VW(110, $mobile);
+      }
+
+      .top-title {
+        color: $g-70;
+      }
+
+      .main-title {
+        text-shadow: 0px 0px VW(10) rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    .right {
+      &__image {
+        width: VW(90);
+        height: VW(90);
+        mix-blend-mode: lighten;
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+
+        @include forMobile {
+          width: VW(70, $mobile);
+          height: VW(70, $mobile);
+          bottom: -10%;
+        }
+      }
+
+      &__text {
+        text-shadow: 0px 0px VW(7) rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  .white {
+    color: $c-white;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: VW(14);
+    margin-top: VW(14);
+
+    @include forMobile {
+      gap: VW(10, $mobile);
+      margin-top: VW(10, $mobile);
+    }
+
+    &__title {
+      margin-bottom: VW(7);
+
+      @include forMobile {
+        margin-bottom: VW(5, $mobile);
+      }
+    }
+
+    .line-highlight {
+      color: $c-white;
+      text-decoration: underline;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: VW(4);
+
+      .item {
+        position: relative;
+        // padding-left: VW(14);
+        display: flex;
+        align-items: start;
+        gap: VW(8);
+
+        @include forMobile {
+          gap: VW(5, $mobile);
+        }
+
+        &::before {
+          content: "";
+          display: block;
+          width: VW(7);
+          height: VW(7);
+
+          min-width: VW(7);
+          min-height: VW(7);
+
+          background: var(--card-color);
+          filter: blur(0.1vw);
+          border-radius: 10vw;
+          margin-top: VW(3);
+
+          @include forMobile {
+            margin-top: VW(3, $mobile);
+            width: VW(4, $mobile);
+            height: VW(4, $mobile);
+
+            filter: blur(0.3vw);
+            min-width: VW(4, $mobile);
+            min-height: VW(4, $mobile);
+          }
+        }
+      }
+    }
+
+    .double-section {
+      display: flex;
+      gap: VW(14);
+
+      .left {
+        width: 50%;
+      }
+
+      .right {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,217 @@
+.footer {
+  height: 90vh;
+  position: relative;
+
+  @include forMobile {
+    height: VW(800, $mobile);
+    overflow: hidden;
+    margin-top: VW(100, $mobile);
+  }
+
+  .left {
+    width: VW(430);
+    padding: VW(35) VW(40) VW(70);
+    margin: VW(75) VW(100);
+    
+    display: flex;
+    flex-direction: column;
+    gap: VW(40);
+    
+    position: relative;
+    
+    @include forMobile {
+      width: VW(300, $mobile);
+      padding: VW(20, $mobile);
+      align-items: end;
+      gap: VW(20, $mobile);
+    }
+
+    .borders {
+      position: absolute;
+      inset: 0;
+
+      .border {
+        width: VW(18);
+        height: VW(18);
+        position: absolute;
+        
+        @include forMobile {
+          width: VW(18, $mobile);
+          height: VW(18, $mobile);
+        }    
+
+        &--left-top {
+          left: 0;
+          top: 0;
+        }
+        &--right-top {
+          right: 0;
+          top: 0;
+        }
+        &--left-bottom {
+          left: 0;
+          bottom: 0;
+
+        }
+        &--right-bottom {
+          right: 0;
+          bottom: 0;
+          
+          @include forDesktop {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__text {
+      width: VW(220);
+
+      @include forMobile {
+        text-align: end;
+        width: VW(200, $mobile);
+      }
+    }
+  }
+
+  &__title {
+    line-height: 100% !important;
+    // padding-right: 10vw;
+
+    @include forMobile {
+      text-align: end;
+      padding-right: 0;
+    }
+
+    &.red {
+      color: $r-70;
+    }
+    
+    .red:nth-of-type(3) {
+      color: $r-70;
+    }
+    
+    .green:nth-of-type(3) {
+      color: $green-100;
+    }
+  }
+
+  .right {
+    .socials {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: VW(50);
+
+      position: absolute;
+      top: VW(70);
+      right: VW(100);
+
+      @include forMobile {
+        top: auto;
+        margin-top: VW(40, $mobile);
+      }
+
+      &__link {
+        display: flex;
+        align-items: end;
+        gap: VW(10);
+        
+        @include forMobile {
+          gap: VW(10, $mobile);
+        }
+
+        .hover-anim {
+          height: VW(36);
+          font-size: VW(30);
+
+          @include forMobile {
+            height: VW(30, $mobile);
+          }
+
+          .flip {
+            a {
+              font-size: VW(30);
+              
+              @include forMobile {
+                font-size: VW(24, $mobile);
+              }    
+            }
+          }
+
+          &__text-line {
+            bottom: -3%;
+            
+            @include forMobile {
+              bottom: 1%;
+            }
+          }
+        }
+      }
+    }
+
+    .policy {
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+      gap: VW(5);
+
+      position: absolute;
+      bottom: VW(170);
+      right: VW(100);
+      
+      @include forMobile {
+        bottom: VW(100, $mobile);
+      }    
+
+      &__link {
+        transition: color 0.3s;
+        color: $g-70;
+        @include hover {
+          color: $green-100;
+        }
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    z-index: -3;
+    width: VW(1030);
+    height: VW(620);
+
+    @include forMobile {
+      width: VW(800, $mobile);
+      height: VW(420, $mobile);
+      transform: scaleX(-1);
+      right: -30%;
+    }
+    img {
+      mix-blend-mode: lighten;
+      object-fit: contain;
+    }
+  }
+}
+
+.running-text {
+  animation: runingText 30s linear infinite;
+  &__wrapper {
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    bottom: VW(20);
+    z-index: -2;
+    opacity: 0.1;
+  }
+}
+
+@keyframes runingText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

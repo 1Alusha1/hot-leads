@@ -1,0 +1,441 @@
+.buy-sell {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  
+  // width: auto;
+  // padding: VW(53) VW(100) 0;
+
+  width: calc(100vw - VW(200));
+  margin: 0 auto;
+
+  @include forMobile {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: VW(50, $mobile);
+    height: auto;
+    padding-bottom: VW(100);
+    width: auto;
+  }
+
+  &__table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: VW(330);
+
+    @include forMobile {
+      width: auto;
+      position: relative;
+      z-index: 10;
+      padding: 0 VW(20, $mobile);
+    }
+
+    .title {
+      @include forMobile {
+        clip-path: none !important;
+        transform: none !important;
+      }
+    }
+
+    &--buy {
+      .title {
+        color: $green-100;
+      }
+
+      .item {
+        border-bottom: 1px solid $green-100;
+      }
+    }
+
+    &--sell {
+      .title {
+        color: $r-70;
+      }
+
+      .item {
+        border-bottom: 1px solid $r-70;
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: VW(20);
+      width: 100%;
+
+      @include forMobile {
+        width: fit-content;
+      }
+
+      .item {
+        font-weight: 300;
+        padding: VW(10);
+        background: rgba(0, 0, 0, 0.2);
+        // border-bottom: 1px solid;
+        backdrop-filter: blur(3vw);
+
+        @include forMobile {
+          padding: VW(10, $mobile);
+          // width: VW(314, $mobile);
+          height: 90%;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
+    }
+
+    .sell-button {
+      @include forDesktop {
+        display: none !important;
+      }
+    }
+  }
+
+  &__background {
+    position: absolute;
+    bottom: -20%;
+    left: 10%;
+    width: VW(1100);
+    height: VW(730);
+    z-index: -2;
+    opacity: 0;
+    transition: opacity 0.5s 0.5s;
+
+    &--active {
+      transition: opacity 0.5s !important;
+      opacity: 1;
+    }
+
+    @include forMobile {
+      display: none !important;
+    }
+  }
+
+  &__mobile-background {
+    display: none;
+
+    @include forMobile {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 100vw;
+      opacity: 0.8;
+    }
+    
+    &--top {
+      @include forMobile {
+        height: VW(600, $mobile);
+        top: 0;
+      }
+    }
+    
+    &--bottom {
+      @include forMobile {
+        bottom: 15vw;
+        left: 0;
+        height: VW(580, $mobile);
+        z-index: -2;
+      }
+    }
+  }
+
+  .buttons-wrapper {
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    // left: VW(100);
+    // right: VW(100);
+    left: 0;
+    right: 0;
+
+    display: flex;
+
+    @include forMobile {
+      display: none;
+    }
+  }
+
+  .sell-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: VW(20) 0;
+    backdrop-filter: blur(5vw);
+    cursor: pointer;
+    text-transform: uppercase;
+
+    @include forMobile {
+      padding: VW(20, $mobile) 0;
+      width: 100%;
+      margin-top: VW(24, $mobile);
+    }
+
+    &--first {
+      background: rgba(0, 207, 60, 0.2);
+      outline: 1px solid $green-100;
+      transition: background 0.5s;
+
+      @include hover {
+        background: rgba(0, 207, 60);
+      }
+
+      &-active {
+        background: rgba(0, 207, 60);
+      }
+    }
+
+    &--second {
+      background: #ff240020;
+      outline: 1px solid $r-70;
+      transition: background 0.5s;
+
+      @include hover {
+        background: #ff2400;
+      }
+
+      @include forMobile {
+        bottom: VW(20, $mobile);
+      }
+
+      &-active {
+        background: #ff2400;
+      }
+    }
+  }
+
+  .active-section {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    background-color: $c-black;
+    overflow: hidden;
+    padding: VW(100) VW(100) 0;
+    
+    @include forMobile {
+      position: fixed;
+      height: 100dvh;
+      padding: 8dvh VW(100) 0;
+    }
+
+    &--sell {
+      .active-section {
+        @include forDesktop {
+          &__background {
+            left: auto;
+            right: 65%;
+          }
+
+          &__doll {
+            right: 80%;
+          }
+
+          &__title {
+            margin-left: auto;
+          }
+
+          &__list {
+            margin-left: auto;
+          }
+
+          &__cta {
+            left: auto;
+            right: VW(840);
+          }
+        }
+
+        @include forMobile {
+          &__background {
+            left: auto;
+            right: 65%;
+          }
+
+          &__doll {
+            right: -10%;
+          }
+
+          &__title {
+            margin-left: auto;
+          }
+
+          &__list {
+            margin-left: auto;
+          }
+        }
+
+        &__cta {
+          border: 1px solid $r-70;
+        }
+      }
+    }
+
+    &__background {
+      position: absolute;
+      bottom: -15%;
+      left: 60%;
+      width: VW(1100);
+      height: VW(730);
+      z-index: -2;
+      scale: 2;
+
+      @include forMobile {
+        width: VW(1100, $mobile);
+        height: VW(730, $mobile);
+        scale: 1;
+        bottom: 30%;
+        left: -70%;
+        opacity: 0.5;
+      }
+    }
+
+    &__doll {
+      position: absolute;
+      top: -10%;
+      right: -20%;
+      width: VW(550);
+      height: VW(580);
+      transform-origin: top center;
+      // transform: translateX(50%) scale(2);
+      scale: 2;
+
+      @include forMobile {
+        width: VW(850, $mobile);
+        height: VW(880, $mobile);
+        scale: 1;
+        right: -120%;
+        filter: brightness(0.7);
+        z-index: -1;
+      }
+    }
+
+    &__title {
+      width: VW(590);
+
+      h1:nth-of-type(1) {
+        text-align: end;
+      }
+
+      @include forMobile {
+        width: 100%;
+      }
+    }
+
+    &__list {
+      margin-top: VW(40);
+      display: flex;
+      flex-direction: column;
+      gap: VW(20);
+      width: VW(650);
+
+      @include forMobile {
+        width: 100%;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: VW(140);
+        padding-bottom: VW(18);
+        position: relative;
+
+        @include forMobile {
+          padding: VW(18, $mobile) 0;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background-color: #3a3a3a;
+        }
+
+        &__image {
+          width: VW(44);
+          height: VW(44);
+          mix-blend-mode: screen;
+
+          @include forMobile {
+            width: VW(44, $mobile);
+            height: VW(44, $mobile);
+          }
+        }
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          font-weight: 300;
+        }
+      }
+    }
+
+    &__cta {
+      background: rgba(0, 0, 0, 0.06);
+      border: 1px solid #00cf3c;
+      box-shadow: inset 0px 0px 68px rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(2vw);
+      border-radius: max(VW(14), 14px);
+      padding: VW(20) VW(30) VW(20);
+      position: absolute;
+      left: VW(840);
+      top: VW(300);
+      z-index: 10;
+      width: VW(180);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: VW(20);
+
+      @include forMobile {
+        gap: VW(20, $mobile);
+        left: VW(90, $mobile);
+        right: VW(90, $mobile);
+        top: auto;
+        bottom: VW(70, $mobile);
+        width: auto;
+        padding: VW(20, $mobile) VW(30, $mobile);
+      }
+
+      .cta {
+        &__image {
+          width: VW(100);
+          height: VW(100);
+          mix-blend-mode: screen;
+
+          @include forMobile {
+            width: VW(60, $mobile);
+            height: VW(60, $mobile);
+          }
+        }
+
+        &__link-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .arrow {
+          width: min(VW(13), 13px);
+          height: min(VW(15), 15px);
+        }
+      }
+    }
+
+    .buttons-wrapper {
+      bottom: VW(30);
+      left: VW(100);
+      right: VW(100);
+    }
+  }
+}

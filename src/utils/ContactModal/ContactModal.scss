@@ -1,0 +1,235 @@
+.contact {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  width: VW(500);
+  height: VW(500);
+  background-color: $c-black;
+  border-radius: VW(20);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: VW(20);
+
+  @include forMobile {
+    width: VW(300, $mobile);
+    height: auto;
+    border-radius: VW(20, $mobile);
+    gap: VW(20, $mobile);
+    padding: VW(50, $mobile) VW(20, $mobile);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: VW(296);
+    height: VW(296);
+    left: 30%;
+    bottom: -60%;
+
+    background: #00cf3c;
+    mix-blend-mode: normal;
+    filter: blur(175.6px);
+
+    @include forMobile {
+      width: VW(196, $mobile);
+      height: VW(196, $mobile);
+      left: 21%;
+      bottom: -60%;
+      filter: blur(20vw);
+    }
+  }
+
+  &-background {
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff1f;
+    backdrop-filter: blur(1vw);
+    z-index: 90;
+
+    @include forMobile {
+      backdrop-filter: blur(5vw);
+    }
+  }
+
+  &__back-button {
+    display: flex;
+    align-items: center;
+    gap: VW(4);
+    transition: color 0.3s, opacity 0.3s;
+    cursor: pointer;
+    opacity: 0.5;
+
+    position: absolute;
+    top: VW(20);
+    right: VW(20);
+    
+    @include forMobile {
+      gap: VW(4, $mobile);
+      opacity: 0.8;
+      
+      top: VW(10, $mobile);
+      right: VW(10, $mobile);
+    }
+
+    @include hover {
+      color: $green-100;
+      opacity: 1;
+
+      path {
+        fill: $green-100;
+      }
+    }
+
+    &-icon {
+      width: VW(23);
+      height: VW(13);
+
+      @include forMobile {
+        width: VW(23, $mobile);
+        height: VW(13, $mobile);
+      }
+
+      path {
+        fill: $c-white;
+        transition: fill 0.3s;
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: VW(20);
+
+    @include forMobile {
+      gap: VW(20, $mobile);
+      width: 100%;
+    }
+
+    &__input {
+      width: 94%;
+      color: $c-white;
+      background-color: transparent;
+      border: VW(1) solid $green-100;
+      padding: VW(20) 0 VW(20) VW(20);
+      border-radius: 10vw;
+
+      @include forMobile {
+        width: 92%;
+        padding: VW(10, $mobile) 0 VW(10, $mobile) VW(20, $mobile);
+        font-size: VW(14, $mobile);
+      }  
+
+      &--error {
+        border-color: $r-70;
+      }
+
+      &-error-msg {
+        color: $r-70;
+        font-size: VW(14);
+        margin-left: VW(20);
+      }
+
+      &-wrapper {
+        position: relative;
+      }
+
+      &-wrapper {
+        position: relative;
+      }
+    }
+
+    .submit-button {
+      margin: VW(20) auto 0;
+
+      background: rgba(0, 207, 60, 0.5);
+
+      @include hover {
+        color: $green-100;
+      }
+
+      @include forMobile {
+        margin: VW(40, $mobile) auto 0;
+      }
+
+      .arrow__wrapper {
+        background: $green-100;
+      }
+
+      &--disabled {
+        background-color: $g-90;
+        cursor: not-allowed;
+        pointer-events: none;
+
+        .arrow__wrapper {
+          background: $g-100;
+        }
+      }
+    }
+
+    .form-change-type {
+      cursor: pointer;
+
+      &__wrapper {
+        display: flex;
+        gap: VW(10);
+
+        @include forMobile {
+          justify-content: space-between;
+        } 
+      }
+
+      &--active {
+        .icon__path {
+          &--fill {
+            fill: $green-100 !important;
+          }
+
+          &--stroke {
+            stroke: $green-100 !important;
+          }
+        }
+      }
+
+      @include hover {
+        .icon__path {
+          &--fill {
+            fill: $green-100 !important;
+          }
+
+          &--stroke {
+            stroke: $green-100 !important;
+          }
+        }
+      }
+
+      .icon {
+        width: VW(90);
+        height: VW(90);
+
+        @include forMobile {
+          width: VW(60, $mobile);
+          height: VW(60, $mobile);
+        }
+
+        .icon__path {
+          &--fill {
+            fill: $g-70;
+            transition: fill 0.3s;
+          }
+
+          &--stroke {
+            stroke: $g-70;
+            transition: stroke 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

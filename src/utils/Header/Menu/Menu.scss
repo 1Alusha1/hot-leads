@@ -1,0 +1,182 @@
+@import "/src/styles/global.scss";
+
+.menu {
+  background-color: $c-black;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  display: none;
+
+  @include forMobile {
+    display: block;
+  }
+
+  &__background {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: VW(15, $mobile) 5vw 0;
+
+    width: auto;
+
+    .menu {
+      &__logo {
+        width: auto;
+        height: VW(14, $mobile);
+      }
+
+      &__back-button {
+        display: flex;
+        align-items: center;
+        gap: VW(4);
+        transition: color 0.3s, opacity 0.3s;
+        cursor: pointer;
+        opacity: 0.5;
+
+        @include forMobile {
+          gap: VW(4, $mobile);
+          opacity: 0.8;
+        }
+
+        @include hover {
+          color: $green-100;
+          opacity: 1;
+
+          path {
+            fill: $green-100;
+          }
+        }
+
+        &-icon {
+          width: VW(23);
+          height: VW(13);
+
+          @include forMobile {
+            width: VW(23, $mobile);
+            height: VW(13, $mobile);
+          }
+
+          path {
+            fill: $c-white;
+            transition: fill 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 VW(60);
+
+    @include forTablet {
+      flex-direction: column;
+      padding-top: VW(100, $tablet);
+    }
+
+    @include forMobile {
+      flex-direction: column;
+      margin-top: VW(50, $mobile);
+    }
+
+    .left,
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: VW(10);
+    }
+
+    .left {
+      .navigation__link:nth-of-type(2) {
+        @include forMobile {
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    &__link {
+      position: relative;
+      padding: VW(25) 0 VW(30);
+      display: flex;
+      align-items: top;
+
+      @include forTablet {
+        padding: VW(25, $tablet) 0 VW(30, $tablet);
+      }
+
+      @include forMobile {
+        padding: VW(7, $mobile) 0;
+        width: 100%;
+        gap: VW(4, $mobile);
+      }
+
+      .number {
+        color: $green-100;
+      }
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: VW(70, $mobile);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: VW(20, $mobile);
+
+    .socials {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 VW(10, $mobile);
+
+      &__link {
+        display: flex;
+        align-items: center;
+        gap: VW(5, $mobile);
+        opacity: 0.4;
+
+        a {
+          position: relative;
+        }
+
+        &__text-line {
+          display: block;
+          position: absolute;
+          bottom: -2%;
+          width: 100%;
+          height: 0.2vw;
+          background-color: $c-white;
+        }
+      }
+    }
+
+    .line {
+      width: 100%;
+      height: 0.2vw;
+      background-color: $c-white;
+      clip-path: inset(0 VW(10, $mobile));
+    }
+
+    .policy {
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+      gap: VW(5, $mobile);
+      margin-right: VW(10, $mobile);
+
+      &__link {
+        color: $g-70;
+      }
+    }
+  }
+}

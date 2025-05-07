@@ -1,0 +1,138 @@
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 100;
+  padding: VW(30) 6.5vw 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @include forMobile {
+    padding: VW(15, $mobile) 5vw 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    width: 100vw;
+    height: VW(107);
+
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+
+    @include forMobile {
+      height: VW(60, $mobile);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: VW(80);
+    height: 100%;
+
+    &--active {
+      @include forMobile {
+        .lang-swith, .menu-wrapper {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    height: VW(16);
+    width: auto;
+    position: relative;
+    z-index: 100;
+
+    @include forMobile {
+      height: VW(16, $mobile);
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: VW(30);
+
+    @include forMobile {
+      display: none;
+    }
+  }
+
+  &__back-button {
+    display: flex;
+    align-items: center;
+    gap: VW(4);
+    transition: color 0.3s, opacity 0.3s;
+    cursor: pointer;
+    opacity: 0.5;
+
+    @include forMobile {
+      gap: VW(4, $mobile);
+      opacity: 0.8;
+    }
+    
+    @include hover {
+      color: $green-100;
+      opacity: 1;
+
+      path {
+        fill: $green-100;
+      }
+    }
+
+    &-icon {
+      width: VW(23);
+      height: VW(13);
+      
+      @include forMobile {
+        width: VW(23, $mobile);
+        height: VW(13, $mobile);;
+      }
+
+      path {
+        fill: $c-white;
+        transition: fill 0.3s;
+      }
+    }
+  }
+
+  .link {
+    transition: color 0.3s;
+
+    @include hover {
+      color: $green-100;
+    }
+    
+    &--red {
+      @include hover {
+        color: $r-70 !important;
+      }
+
+      &.link--active {
+        color: $r-70 !important;
+      }
+    }
+
+    &--active {
+      color: $green-100;
+    }
+  }
+
+  .menu-wrapper {
+    display: none;
+
+    @include forMobile {
+      display: block;
+    }
+  }
+}

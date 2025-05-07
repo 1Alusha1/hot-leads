@@ -1,0 +1,308 @@
+.active-section {
+  position: relative;
+  // inset: 0;
+  z-index: 20;
+  background-color: $c-black;
+  overflow: hidden;
+  // margin-top: VW(50);
+  padding: VW(100) VW(100);
+  // aspect-ratio: 16/9;
+
+  @include forMobile {
+    // position: fixed;
+    // height: 100dvh;
+    padding: 8dvh VW(100) 0;
+    aspect-ratio: 9/16;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    height: VW(40);
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    height: VW(50);
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+  }
+
+  &--sell {
+    .active-section {
+      @include forDesktop {
+        &__background {
+          right: 65%;
+        }
+
+        &__doll {
+          right: -15%;
+        }
+      }
+
+      @include forMobile {
+        &__background {
+          left: auto;
+          right: -122%;
+          top: -10%;
+        }
+
+        &__doll {
+          right: -110%;
+        }
+
+        &__title {
+          margin-left: auto;
+        }
+
+        &__list {
+          margin-left: auto;
+        }
+      }
+
+      &__cta {
+        border: 1px solid $r-70;
+      }
+    }
+  }
+
+  &--buy {
+    .active-section {
+      @include forDesktop {
+        &__background {
+          left: auto;
+          right: 65%;
+        }
+
+        &__doll {
+          right: 80%;
+        }
+
+        &__title {
+          margin-left: auto;
+        }
+
+        &__list {
+          margin-left: auto;
+        }
+
+        &__cta {
+          left: auto;
+          right: VW(840);
+        }
+      }
+
+      @include forMobile {
+        &__background {
+          left: auto;
+          right: -62%;
+          top: -10%;
+        }
+
+        &__doll {
+          right: -10%;
+        }
+
+        &__title {
+          margin-left: auto;
+        }
+
+        &__list {
+          margin-left: auto;
+        }
+      }
+
+      &__cta {
+        border: 1px solid $r-70;
+      }
+    }
+  }
+
+  &__background {
+    position: absolute;
+    bottom: -15%;
+    left: 60%;
+    width: VW(1100);
+    height: VW(730);
+    z-index: -2;
+    scale: 2;
+
+    @include forMobile {
+      width: VW(1100, $mobile);
+      height: VW(730, $mobile);
+      scale: 1;
+      bottom: 30%;
+      left: -70%;
+      opacity: 0.5;
+    }
+
+    img {
+      transform: scaleX(-1);
+    }
+  }
+
+  &__doll {
+    position: absolute;
+    top: -2%;
+    right: -20%;
+    width: VW(550);
+    height: VW(580);
+    transform-origin: top center;
+    // transform: translateX(50%) scale(2);
+    scale: 2;
+
+    @include forMobile {
+      width: VW(850, $mobile);
+      height: VW(880, $mobile);
+      scale: 1;
+      right: -120%;
+      filter: brightness(0.7);
+      z-index: -1;
+    }
+
+    img {
+      transform: scaleX(-1);
+    }
+  }
+
+  &__title {
+    width: VW(590);
+
+    h1:nth-of-type(1) {
+      text-align: end;
+    }
+
+    @include forMobile {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    margin-top: VW(40);
+    display: flex;
+    flex-direction: column;
+    gap: VW(20);
+    width: VW(650);
+
+    @include forMobile {
+      width: 100%;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: VW(140);
+      padding-bottom: VW(18);
+      position: relative;
+
+      @include forMobile {
+        padding: VW(18, $mobile) 0;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #3a3a3a;
+      }
+
+      &__image {
+        width: VW(44);
+        height: VW(44);
+        mix-blend-mode: screen;
+
+        @include forMobile {
+          width: VW(44, $mobile);
+          height: VW(44, $mobile);
+        }
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        font-weight: 300;
+      }
+    }
+  }
+
+  .buttons-wrapper {
+    bottom: VW(30);
+    left: VW(100);
+    right: VW(100);
+  }
+
+  .sell-button {
+    width: 100%;
+    height: VW(50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5vw);
+    cursor: pointer;
+    text-transform: uppercase;
+
+    @include forMobile {
+      width: 100%;
+      margin-top: VW(24, $mobile);
+    }
+
+    &--buy {
+      background: rgba(0, 207, 60, 0.2);
+      outline: 1px solid $green-100;
+      transition: background 0.5s;
+      mask: url("/images/buySection/buttonMask.svg") no-repeat center;
+      mask-size: contain;
+      padding: VW(25) 0 VW(20);
+
+      @include hover {
+        background: rgba(0, 207, 60);
+      }
+
+      @include forMobile {
+        padding: VW(25, $mobile) 0 VW(20, $mobile);
+      }  
+
+      &-active {
+        background: rgba(0, 207, 60);
+      }
+    }
+
+    &--sell {
+      background: #ff240020;
+      outline: 1px solid $r-70;
+      transition: background 0.5s;
+      mask: url("/images/sellSection/buttonMask.svg") no-repeat center;
+      mask-size: contain;
+      padding: VW(20) 0 VW(25);
+
+      @include hover {
+        background: #ff2400;
+      }
+
+      @include forMobile {
+        padding: VW(20, $mobile) 0 VW(25, $mobile);
+        bottom: VW(20, $mobile);
+      }
+
+      &-active {
+        background: #ff2400;
+      }
+    }
+  }
+}

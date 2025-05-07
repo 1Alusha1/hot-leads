@@ -1,0 +1,119 @@
+{
+  "en": {
+    "left": {
+      "title": "Leave your contact details",
+      "text": "And our partner relations manager will contact you.",
+      "button": {
+        "text": "contact us",
+        "link": ""
+      }
+    },
+    "right": {
+      "socials": [
+        {
+          "title": "telegram",
+          "link": "https://t.me/itmo",
+          "icon": "/images/socials/tg.svg"
+        },
+        {
+          "title": "Skype",
+          "link": "https://Skype.me/itmo",
+          "icon": "/images/socials/skype.svg"
+        },
+        {
+          "title": "Email",
+          "link": "mailto:",
+          "icon": "/images/socials/mail.svg"
+        }
+      ],
+      "policy": [
+        {
+          "title": "AFFILIATE AGREEMENT",
+          "link": "/privacy"
+        },
+        {
+          "title": "PRIVACY POLICY",
+          "link": "/terms"
+        }
+      ]
+    }
+  },
+  "ru": {
+    "left": {
+      "title": "Оставьте свои контактные данные",
+      "text": "И наш менеджер по работе с партнерами свяжется с вами.",
+      "button": {
+        "text": "напишите нам",
+        "link": ""
+      }
+    },
+    "right": {
+      "socials": [
+        {
+          "title": "telegram",
+          "link": "https://t.me/itmo",
+          "icon": "/images/socials/tg.svg"
+        },
+        {
+          "title": "Skype",
+          "link": "https://Skype.me/itmo",
+          "icon": "/images/socials/skype.svg"
+        },
+        {
+          "title": "Email",
+          "link": "mailto:",
+          "icon": "/images/socials/mail.svg"
+        }
+      ],
+      "policy": [
+        {
+          "title": "ПАРТНЁРСКОЕ СОГЛАШЕНИЕ",
+          "link": "/privacy"
+        },
+        {
+          "title": "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ",
+          "link": "/terms"
+        }
+      ]
+    }
+  },
+  "ua": {
+    "left": {
+      "title": "Залиште свої контактні дані",
+      "text": "І наш менеджер по роботі з партнерами зв'яжеться з вами.",
+      "button": {
+        "text": "напишіть нам",
+        "link": ""
+      }
+    },
+    "right": {
+      "socials": [
+        {
+          "title": "telegram",
+          "link": "https://t.me/itmo",
+          "icon": "/images/socials/tg.svg"
+        },
+        {
+          "title": "Skype",
+          "link": "https://Skype.me/itmo",
+          "icon": "/images/socials/skype.svg"
+        },
+        {
+          "title": "Email",
+          "link": "mailto:",
+          "icon": "/images/socials/mail.svg"
+        }
+      ],
+      "policy": [
+        {
+          "title": "ПАРТНЕРСЬКА УГОДА",
+          "link": "/privacy"
+        },
+        {
+          "title": "ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ",
+          "link": "/terms"
+        }
+      ]
+    }
+  }
+}

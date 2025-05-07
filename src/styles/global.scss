@@ -1,0 +1,99 @@
+  @import "./utils/typography";
+  @import "./utils/mixins";
+  @import "./utils/variables";
+  @import "./utils/adaptive-font";
+  @import './utils/responsive-data';
+
+.body {
+  @extend %body-text;
+  background-color: $c-black;
+  color: $c-white;
+  overflow-x: hidden;
+  opacity: 1;
+  ::selection {
+    color: #5f00f9;
+    background: #6929ff1b;
+    mix-blend-mode: difference;
+  }
+}
+
+.html, .body {
+  scrollbar-width: none; /* Firefox 64+ */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  overflow: -moz-scrollbars-none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  &::-moz-scrollbar {
+    display: none; /* Firefox до версії 64 */
+  }
+}
+
+@supports (-ms-overflow-style: none) {
+  .html {
+    -ms-overflow-style: none;
+  }
+}
+
+@supports (-ms-overflow-style: none) {
+  .html {
+    overflow: -ms-autohiding-scrollbar;
+  }
+}
+
+.container {
+  padding-right: VW(100);
+  padding-left: VW(100);
+}
+
+.shadow {
+  color: $g-70;
+}
+
+.main {
+  &--loading {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.lazyload-wrapper {
+  height: 100%;
+  width: 100%;
+  
+  img, video {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.col-red {
+  color: $r-70;
+}
+
+.col-green {
+  color: $green-100;
+}
+
+.modal-background {
+  position: fixed;
+  inset: 0;
+  background-color: $c-black;
+  z-index: 10;
+  opacity: 0;
+  animation: presence 0.5s ease-in-out forwards;  
+
+  @keyframes presence {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

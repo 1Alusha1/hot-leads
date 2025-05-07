@@ -1,0 +1,29 @@
+@import "./mixins";
+@import "./variables";
+
+.fz {
+  @for $PX from 10 through 350 {
+    &--#{$PX} {
+      font-size: VW($PX) !important;
+      line-height: 100%;
+    }
+  }
+  
+  @include forTablet {
+    @for $PX from 10 through 200 {
+      &--tablet-#{$PX} {
+        font-size: VW($PX, $tablet) !important;
+        line-height: 100%;
+      }
+    }
+  }
+  
+  @include forMobile {
+    @for $PX from 4 through 100 {
+      &--mobile-#{$PX} {
+        font-size: VW($PX, $mobile) !important;
+        line-height: 100%;
+      }
+    }
+  }
+}

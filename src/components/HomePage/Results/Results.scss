@@ -1,0 +1,66 @@
+.results {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  &__title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: VW(220);
+  }
+
+  .slider {
+    padding-top: 8vw;
+
+    @include forMobile {
+      padding-top: 30vw;
+    }
+
+    .slide {
+      outline: none;
+      .result-card {
+        scale: 0.5;
+        filter: brightness(0.5);
+        transition: all 0.5s ease-in-out;
+        outline: none;
+
+        .blur-bg {
+          opacity: 0;
+        }
+      }
+
+      &.is-prev,
+      &.is-next {
+        .result-card {
+          scale: 0.7;
+          filter: brightness(0.7);
+
+          .blur-bg {
+            opacity: 0.4;
+          }
+
+          @include forMobile {
+            scale: 0.9;
+          }
+        }
+      }
+
+      &.is-active {
+        .result-card {
+          scale: 1;
+          filter: brightness(1);
+
+          .blur-bg {
+            opacity: 1;
+            
+            @include forMobile {
+              opacity: 0.6;
+            }  
+          }
+        }
+      }
+    }
+  }
+}

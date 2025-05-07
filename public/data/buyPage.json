@@ -1,0 +1,537 @@
+{
+  "en": {
+    "seo": {
+      "documentTitle": "BUY LEADS - HOT LEADS",
+      "documentKeywords": "buy leads, lead generation, quality traffic, marketing leads",
+      "documentDescription": "Buy high-quality leads that open the door to record profits. Partner with Hot Leads for the best conversion rates.",
+      "documentImage": "/images/screenshot.png"
+    },
+    "hero": {
+      "title": {
+        "top": "partners",
+        "main": "HOT-LEADS",
+        "description": "Hot leads that open the door to a world of record profits",
+        "button": "contact us"
+      },
+      "list": [
+        {
+          "top": "earning from leads",
+          "title": "guaranteed",
+          "image": "/images/hero/list-1.webp"
+        },
+        {
+          "top": "all countries",
+          "title": "Any volume",
+          "image": "/images/hero/list-2.webp"
+        },
+        {
+          "top": "long-term relationships",
+          "title": "stability",
+          "image": "/images/hero/list-3.webp"
+        }
+      ]
+    },
+    "aboutService": {
+      "title": "buy",
+      "list": [
+        {
+          "title": "Personalization",
+          "text": "Work directly with media buying and get <b>the hottest</b> leads for your brand. <b>Traffic G is a media buying service with an individual approach</b> to each partner."
+        },
+        {
+          "title": "Quality",
+          "text": "<b>We'll help you achieve maximum results</b> thanks to our experience and professionalism. Convinced? - Order a test flow"
+        },
+        {
+          "big": true,
+          "title": "Expertise",
+          "text": "Including our <b>sales marketing department</b> that creates successful strategies, and our leading funnel development department. Together with the most innovative design department in the world - we do everything to ensure you <b>earn from the highest quality traffic in the entire market.</b>"
+        }
+      ],
+      "button": {
+        "text": "Order a test flow",
+        "link": "/"
+      }
+    },
+    "ctaSection": {
+      "title": ["buying leads from us", "is your most profitable", "decision"],
+      "backButton": "back",
+      "list": [
+        {
+          "image": "/images/buysell/buy1.png",
+          "title": "20% discount on lead price for starters"
+        },
+        {
+          "image": "/images/buysell/buy2.png",
+          "title": "All regions and languages available in unlimited volume"
+        },
+        {
+          "image": "/images/buysell/buy3.png",
+          "title": "Individual traffic for each partner"
+        }
+      ],
+      "button": {
+        "text": "Order a test campaign",
+        "link": "/"
+      }
+    },
+    "results": {
+      "title": "Results",
+      "list": [
+        {
+          "type": "buy",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "conversion rate",
+              "mainTitle": "5%",
+              "image": "/images/results/Buy/buy-1.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": "[Problem]",
+              "content": "Low income due to overheated, non-paying leads with negative experience working with legal companies. Agents couldn't extract money from leads."
+            },
+            {
+              "type": "textFull",
+              "title": "[Solution]",
+              "content": "In-house lead generation. Trust landing page + quiz for segmentation. Lead motivation to pay commission and additional expenses. Added 2 new sources to reduce the share of leads with negative experience."
+            },
+            {
+              "type": "list",
+              "title": "[Result]",
+              "list": [
+                "Peak conversion – 27%",
+                "Stable call rate – 85%",
+                "Peak PV for six months – $8,000"
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": "Leads are potential, sales work with a prepared audience, the brand is successfully scaling.",
+              "content": "<span class=\"line-highlight\">Get leads</span> - Use our experience and methods to increase conversion and profit for your business."
+            }
+          ]
+        },
+        {
+          "type": "buy",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "<span class=\"white\">Individual strategy</span> for brands",
+              "mainTitle": false,
+              "image": "/images/results/Buy/buy-2.png"
+            }
+          },
+          "text": [
+            {
+              "type": "list",
+              "title": "[Challenge]",
+              "list": [
+                "Meet volume requirements for Turkey at 500 daily with Google Search + YouTube.",
+                "Increase CR for Polish Europe, native Czech Republic and Italy."
+              ]
+            },
+            {
+              "type": "list",
+              "title": "[Solution]",
+              "list": [
+                "Connected buying with a team of Google webmasters (5+ years of experience in Turkey), set up the funnel according to brand request and secured exclusive conditions.",
+                "Reached 16% CR for Polish Europe by targeting the exact audience and using an individual approach.",
+                "Achieved 21% conversion in native Czech Republic through advertising on a local news site.",
+                "To get high conversion for Italy, we selected 10 influencers who created content with the brand platform. In total, we attracted 4000 leads, of which 530 made the first deposit."
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "<span class=\"line-highlight\">Supply your desk with quality traffic</span>"
+            }
+          ]
+        },
+        {
+          "type": "buy",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "<span class=\"white\">continuous lead generation</span> for brands",
+              "mainTitle": false,
+              "image": "/images/results/Buy/buy-3.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": "[Request]",
+              "content": "A German native brand approached us facing a lack of traffic volume and quality. <br/><br/> Agents couldn't take anyone into work, which strongly demotivated the team, and management experienced financial losses."
+            },
+            {
+              "type": "textFull",
+              "title": "[Solution]",
+              "content": "We solved the client's need. <span class=\"white\">We provided continuous lead generation</span> tailored individually to their request. <br/><br/> Agents couldn't take anyone into work, which strongly demotivated the team, and management experienced financial losses. <br/><br/> We solve any traffic tasks - <span class=\"line-highlight\">supply your business with quality leads</span>"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "ru": {
+    "seo": {
+      "documentTitle": "КУПИТЬ ЛИДЫ - HOT LEADS",
+      "documentKeywords": "купить лиды, генерация лидов, качественный трафик, маркетинговые лиды",
+      "documentDescription": "Покупайте горячие лиды для рекордных доходов. Партнёрство с Hot Leads для лучших конверсий.",
+      "documentImage": "/images/screenshot.png"
+    },
+    "hero": {
+      "title": {
+        "top": "partners",
+        "main": "HOT-LEADS",
+        "description": "Горячие лиды открывающие дверь в мир рекордных доходов",
+        "button": "напишите нам"
+      },
+      "list": [
+        {
+          "top": "заработок с лидов",
+          "title": "гарантировано",
+          "image": "/images/hero/list-1.webp"
+        },
+        {
+          "top": "все страны",
+          "title": "Любые объёмы",
+          "image": "/images/hero/list-2.webp"
+        },
+        {
+          "top": "долгосрочные отношения ",
+          "title": "стабильность ",
+          "image": "/images/hero/list-3.webp"
+        }
+      ]
+    },
+    "aboutService": {
+      "title": "buy",
+      "list": [
+        {
+          "title": "Персонализация",
+          "text": "Работайте напрямую с медиабаингом и получайте <b> самые горячие </b> лиды для вашего бренда. <b> Traffic G - медиабаинг с индивидуальным подходом </b> к каждому партнеру."
+        },
+        {
+          "title": "Качество",
+          "text": "<b>Мы поможем вам достичь максимальных результатов </b> лблагодаря нашему опыту и профессионализму. Убедительно? - Закажи тестовый пролив"
+        },
+        {
+          "big": true,
+          "title": "Экспертиза",
+          "text": "Включая наш <b> продающий маркетинговый отдел </b> который создает успешные стратегии, лидирующий отдел разработки воронок. Совместно с самым инновационным дизайн-отделом в мире - делает все, чтобы вы . <b> зарабатывали на самом качественном трафике во всем рынке."
+        }
+      ],
+      "button": {
+        "text": "Заказать тестовый пролив",
+        "link": "/"
+      }
+    },
+    "ctaSection": {
+      "title": ["купить лиды у нас", "—ваше самое выгодное", "решение"],
+      "backButton": "назад",
+      "list": [
+        {
+          "image": "/images/buysell/buy1.png",
+          "title": "Для старта даем -20% от цены лида"
+        },
+        {
+          "image": "/images/buysell/buy2.png",
+          "title": "Есть все гео и языки на потоке в неограниченном объеме"
+        },
+        {
+          "image": "/images/buysell/buy3.png",
+          "title": "Индивидуальный трафик для каждого партнера"
+        }
+      ],
+      "button": {
+        "text": "Заказать тестовый пролив",
+        "link": "/"
+      }
+    },
+    "results": {
+      "title": "Результаты",
+      "list": [
+        {
+          "type": "buy",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "конверсия на ЧБ",
+              "mainTitle": "5%",
+              "image": "/images/results/Buy/buy-1.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": "[Проблема]",
+              "content": "Низкие доходы из-за перегретых, неплатежеспособных лидов с негативным опытом работы с юр. компаниями. Агенты не могли достать деньги с лидов."
+            },
+            {
+              "type": "textFull",
+              "title": "[Решение]",
+              "content": "Собственная лидогенерация. Трастовый лендинг + квиз для сегментации. Мотивация лида к оплате комиссии и доп. расходов. Добавили 2 новых источника для снижения доли лидов с негативным опытом на чб."
+            },
+            {
+              "type": "list",
+              "title": "[Результат]",
+              "list": [
+                "Пиковая конверсия – 27%",
+                "Стабильный дозвон – 85%",
+                "Пиковый PV за полгода – $8,000"
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": "Лиды потенциальные, сейлы работают с подготовленной аудиторией, бренд успешно масштабируется.",
+              "content": "<span class=\"line-highlight\">Получите лидов</span> - Используйте наш опыт и методы, чтобы увеличить конверсию и прибыль вашего бизнеса."
+            }
+          ]
+        },
+        {
+          "type": "buy",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "<span class=\"white\">Индивидуальная стратегия</span> для бренда",
+              "mainTitle": false,
+              "image": "/images/results/Buy/buy-2.png"
+            }
+          },
+          "text": [
+            {
+              "type": "list",
+              "title": "[Челендж]",
+              "list": [
+                "Закрыть объемы по Турции в 500 Дейли с Google Search + YouTube.",
+                "Повышение CR по польской Европе, нативной Чехии и Италии."
+              ]
+            },
+            {
+              "type": "list",
+              "title": "[Решение]",
+              "list": [
+                "Подключили баинг с командой Google-вебмастеров (5+ лет опыта по Турции), настроили связку под запрос бренда и закрепили эксклюзивные условия.",
+                "Довели CR до 16% по польской Европе за счет точного попадания в ЦА и индивидуального подхода.",
+                "В нативной Чехии достигли 21% конверсии благодаря рекламе на локальном новостном сайте.",
+                "Чтобы получить высокий конверт по Италии, отобрали 10 инфлов которые отсняли контент с платформой бренда. Всего привлекли 4000 лидов из которых 530 внесли первый депозит."
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "<span class=\"line-highlight\">Обеспечь свой деск качественным трафиком</span>"
+            }
+          ]
+        },
+        {
+          "type": "buy",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "<span class=\"white\">постоянная лидогенерация</span> для бренда",
+              "mainTitle": false,
+              "image": "/images/results/Buy/buy-3.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": "[Запрос]",
+              "content": "Немецкий нативный Бренд обратился к нам столкнувшись с нехваткой объемов и качества трафика. <br/><br/> Агенты не могли взять никого в работу, что сильно демотивировало команду, а руководство испытывало финансовые потери."
+            },
+            {
+              "type": "textFull",
+              "title": "[Решение]",
+              "content": "Мы решили потребность клиента. <span class=\"white\">Предоставили постоянную лидогенерацию</span> собранную индивидуально под его запрос. <br/><br/> Агенты не могли взять никого в работу, что сильно демотивировало команду, а руководство испытывало финансовые потери. <br/><br/> Мы решаем любые задачи по трафику - <span class=\"line-highlight\">обеспечь свой бизнес качественными лидами</span>"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "ua": {
+    "seo": {
+      "documentTitle": "КУПИТИ ЛІДИ - HOT LEADS",
+      "documentKeywords": "купити ліди, генерація лідів, якісний трафік, маркетингові ліди",
+      "documentDescription": "Купуйте гарячі ліди для рекордних доходів. Партнерство з Hot Leads для найкращих конверсій.",
+      "documentImage": "/images/screenshot.png"
+    },
+    "hero": {
+      "title": {
+        "top": "partners",
+        "main": "HOT-LEADS",
+        "description": "Гарячі ліди, які відкривають двері у світ рекордних доходів",
+        "button": "напишіть нам"
+      },
+      "list": [
+        {
+          "top": "заробіток з лідів",
+          "title": "гарантовано",
+          "image": "/images/hero/list-1.webp"
+        },
+        {
+          "top": "всі країни",
+          "title": "Будь-які обсяги",
+          "image": "/images/hero/list-2.webp"
+        },
+        {
+          "top": "довгострокові відносини",
+          "title": "стабільність",
+          "image": "/images/hero/list-3.webp"
+        }
+      ]
+    },
+    "aboutService": {
+      "title": "buy",
+      "list": [
+        {
+          "title": "Персоналізація",
+          "text": "Працюйте безпосередньо з медіабаїнгом і отримуйте <b>найгарячіші</b> ліди для вашого бренду. <b>Traffic G - медіабаїнг з індивідуальним підходом</b> до кожного партнера."
+        },
+        {
+          "title": "Якість",
+          "text": "<b>Ми допоможемо вам досягти максимальних результатів</b> завдяки нашому досвіду та професіоналізму. Переконливо? - Замовте тестовий пролив"
+        },
+        {
+          "big": true,
+          "title": "Експертиза",
+          "text": "Включаючи наш <b>продаючий маркетинговий відділ</b>, який створює успішні стратегії, провідний відділ розробки воронок. Спільно з найбільш інноваційним дизайн-відділом у світі - робимо все, щоб ви <b>заробляли на найякіснішому трафіку на всьому ринку.</b>"
+        }
+      ],
+      "button": {
+        "text": "Замовити тестовий пролив",
+        "link": "/"
+      }
+    },
+    "ctaSection": {
+      "title": ["купити ліди у нас", "—ваше найвигідніше", "рішення"],
+      "backButton": "назад",
+      "list": [
+        {
+          "image": "/images/buysell/buy1.png",
+          "title": "Для старту даємо -20% від ціни ліда"
+        },
+        {
+          "image": "/images/buysell/buy2.png",
+          "title": "Є всі гео та мови на потоці в необмеженому обсязі"
+        },
+        {
+          "image": "/images/buysell/buy3.png",
+          "title": "Індивідуальний трафік для кожного партнера"
+        }
+      ],
+      "button": {
+        "text": "Замовити тестовий пролив",
+        "link": "/"
+      }
+
+    },
+    "results": {
+      "title": "Результати",
+      "list": [
+        {
+          "type": "buy",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "конверсія на ЧБ",
+              "mainTitle": "5%",
+              "image": "/images/results/Buy/buy-1.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": "[Проблема]",
+              "content": "Низькі доходи через перегрітих, неплатоспроможних лідів з негативним досвідом роботи з юр. компаніями. Агенти не могли отримати гроші з лідів."
+            },
+            {
+              "type": "textFull",
+              "title": "[Рішення]",
+              "content": "Власна лідогенерація. Трастовий лендінг + квіз для сегментації. Мотивація ліда до оплати комісії та дод. витрат. Додали 2 нових джерела для зниження частки лідів з негативним досвідом на чб."
+            },
+            {
+              "type": "list",
+              "title": "[Результат]",
+              "list": [
+                "Пікова конверсія – 27%",
+                "Стабільний дозвон – 85%",
+                "Піковий PV за півроку – $8,000"
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": "Ліди потенційні, сейли працюють з підготовленою аудиторією, бренд успішно масштабується.",
+              "content": "<span class=\"line-highlight\">Отримайте лідів</span> - Використовуйте наш досвід і методи, щоб збільшити конверсію та прибуток вашого бізнесу."
+            }
+          ]
+        },
+        {
+          "type": "buy",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "<span class=\"white\">Індивідуальна стратегія</span> для бренду",
+              "mainTitle": false,
+              "image": "/images/results/Buy/buy-2.png"
+            }
+          },
+          "text": [
+            {
+              "type": "list",
+              "title": "[Челендж]",
+              "list": [
+                "Закрити обсяги по Туреччині в 500 Дейлі з Google Search + YouTube.",
+                "Підвищення CR по польській Європі, нативній Чехії та Італії."
+              ]
+            },
+            {
+              "type": "list",
+              "title": "[Рішення]",
+              "list": [
+                "Підключили баїнг з командою Google-вебмайстрів (5+ років досвіду по Туреччині), налаштували зв'язку під запит бренду та закріпили ексклюзивні умови.",
+                "Довели CR до 16% по польській Європі за рахунок точного влучення в ЦА та індивідуального підходу.",
+                "У нативній Чехії досягли 21% конверсії завдяки рекламі на локальному новинному сайті.",
+                "Щоб отримати високий конверт по Італії, відібрали 10 інфлів які відзняли контент з платформою бренду. Всього залучили 4000 лідів з яких 530 внесли перший депозит."
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "<span class=\"line-highlight\">Забезпеч свій деск якісним трафіком</span>"
+            }
+          ]
+        },
+        {
+          "type": "buy",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "<span class=\"white\">постійна лідогенерація</span> для бренду",
+              "mainTitle": false,
+              "image": "/images/results/Buy/buy-3.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": "[Запит]",
+              "content": "Німецький нативний Бренд звернувся до нас зіткнувшись з нестачею обсягів і якості трафіку. <br/><br/> Агенти не могли взяти нікого в роботу, що сильно демотивувало команду, а керівництво зазнавало фінансових втрат."
+            },
+            {
+              "type": "textFull",
+              "title": "[Рішення]",
+              "content": "Ми вирішили потребу клієнта. <span class=\"white\">Надали постійну лідогенерацію</span> зібрану індивідуально під його запит. <br/><br/> Агенти не могли взяти нікого в роботу, що сильно демотивувало команду, а керівництво зазнавало фінансових втрат. <br/><br/> Ми вирішуємо будь-які завдання з трафіку - <span class=\"line-highlight\">забезпеч свій бізнес якісними лідами</span>"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,232 @@
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  @include forMobile {
+    height: auto;
+    width: 100vw;
+    aspect-ratio: 9/16;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      height: VW(500);
+      background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: VW(300);
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .hero-anim {
+    position: absolute;
+    inset: 0;
+    height: 120vh;
+    z-index: -2;
+
+    @include forMobile {
+      margin-bottom: 0;
+      position: absolute;
+      top: 1%;
+      transform: translate(-30%, -10%) !important;
+  
+      width: VW(1019, $mobile);
+      height: 100lvh;
+      aspect-ratio: 9/16;
+  
+      img {
+        object-position: top;
+      }
+    }
+  }
+
+  .title {
+    width: 100%;
+    height: VW(235) !important;
+
+    @include forMobile {
+      position: static !important;
+    }
+
+    &-wrapper {
+      position: absolute;
+      top: 44%;
+      left: 50%;
+      z-index: 11;
+      transform: translate(-50%, -50%);
+      width: VW(1291);
+      height: VW(250);
+
+      @include forMobile {
+        top: VW(120, $mobile);
+        width: 100%;
+        height: VW(100, $mobile);
+
+        display: flex;
+        flex-direction: column;
+        gap: VW(5, $mobile);
+      }
+    }
+
+    &__bottom {
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      right: 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include forMobile {
+        position: static;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        padding-right: VW(20, $mobile);
+        gap: VW(20, $mobile);
+      }
+
+      .description {
+        width: VW(300);
+        text-align: end;
+
+        @include forMobile {
+          width: VW(230, $mobile);
+        }
+      }
+    }
+  }
+
+  .flames {
+    position: absolute;
+    z-index: -3;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .hero__flame {
+      &-1 {
+        width: VW(568);
+        height: VW(558);
+        mix-blend-mode: screen;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        rotate: 300deg;
+        transform-origin: center;
+        transform: translate(0%, 40%);
+
+        @include forMobile {
+          top: -15%;
+        }
+      }
+      &-2 {
+        width: VW(753);
+        height: VW(380);
+        mix-blend-mode: screen;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        rotate: 300deg;
+        transform-origin: center;
+        transform: translate(-20%, -60%);
+      }
+    }
+  }
+
+  .cards {
+    position: absolute;
+    bottom: 2vw;
+    left: 0;
+    right: 0;
+    padding: 0 VW(100) VW(30) VW(110);
+
+    display: flex;
+    gap: VW(30);
+
+    z-index: 10;
+
+    @include forMobile {
+      flex-direction: column;
+      gap: VW(6, $mobile);
+      bottom: VW(10, $mobile);
+    }
+
+    .card {
+      // padding: 0 VW(40);
+      width: VW(380);
+      // height: 10.161111vw;
+      height: VW(142);
+      border-radius: VW(14);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      position: relative;
+
+      overflow: hidden;
+      // background: rgba(255, 255, 255, 0.06);
+      // box-shadow: inset 0px 0px VW(68) rgba(255, 255, 255, 0.05);
+      // backdrop-filter: blur(VW(20));
+
+      background: no-repeat center/contain;
+
+      @include forMobile {
+        width: auto;
+        // padding: VW(8, $mobile) VW(30, $mobile);
+        height: VW(84, $mobile);
+        border-radius: VW(14, $mobile);
+        // backdrop-filter: blur(5vw);
+      }  
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        gap: VW(8);
+        position: relative;
+        z-index: 2;
+        width: 12vw;
+        margin-left: VW(40);
+        
+        @include forMobile {
+          width: 45vw;
+          margin-left: VW(20, $mobile);
+        }  
+      }
+
+      &__image {
+        width: VW(100);
+        height: VW(100);
+        mix-blend-mode: lighten;
+        z-index: 2;
+
+        @include forMobile {
+          width: VW(68, $mobile);
+          height: VW(68, $mobile);;  
+        }  
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "en": {
+    "title": "Оставьте заявку",
+    "form": {
+      "nameInput": {
+        "placeholder": "Имя",
+        "error": "Введите имя"
+      },
+
+      "telegramInput": {
+        "placeholder": "@Messengerlogin",
+        "error": "Введите никнейм"
+      },
+      "whatsappInput": {
+        "placeholder": "Whatsapp",
+        "error": "Введите whatsapp"
+      },
+      "skypeInput": {
+        "placeholder": "Skype",
+        "error": "Введите Skype"
+      },
+      "emailInput": {
+        "placeholder": "Email",
+        "error": "Введите email"
+      },
+      "submitButton": "Oтправить"
+    }
+  }
+}

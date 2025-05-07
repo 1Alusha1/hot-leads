@@ -1,0 +1,59 @@
+{
+  "en": {
+    "seo": {
+      "documentTitle": "HOT LEADS",
+      "documentKeywords": "",
+      "documentDescription": "",
+      "documentImage": "/images/screenshot.png"
+    },
+    "linkSection": {
+      "title": "What are you interested in?",
+      "buyLink": {
+        "title": "Buy leads",
+        "url": "/buy"
+      },
+      "sellLink": {
+        "title": "Sell leads",
+        "url": "/sell"
+      }
+    }
+  },
+  "ru": {
+    "seo": {
+      "documentTitle": "HOT LEADS",
+      "documentKeywords": "",
+      "documentDescription": "",
+      "documentImage": "/images/screenshot.png"
+    },
+    "linkSection": {
+      "title": "Что вас интересует?",
+      "buyLink": {
+        "title": "Купить лиды",
+        "url": "/ru/buy"
+      },
+      "sellLink": {
+        "title": "Продать лиды",
+        "url": "/ru/sell"
+      }
+    }
+  },
+  "ua": {
+    "seo": {
+      "documentTitle": "HOT LEADS",
+      "documentKeywords": "",
+      "documentDescription": "",
+      "documentImage": "/images/screenshot.png"
+    },
+    "linkSection": {
+      "title": "Що вас цікавить?",
+      "buyLink": {
+        "title": "Купити ліди",
+        "url": "/ua/buy"
+      },
+      "sellLink": {
+        "title": "Продати ліди",
+        "url": "/ua/sell"
+      }
+    }
+  }
+}

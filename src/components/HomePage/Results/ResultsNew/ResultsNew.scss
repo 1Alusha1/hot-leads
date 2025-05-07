@@ -1,0 +1,76 @@
+.swiper-container {
+  width: 130%;
+  transform: translateX(-12%);
+  
+  @include forMobile {
+    width: 260%;
+    transform: translateX(-30%);
+  }
+
+  .swiper {
+    padding-top: 10vw;
+    
+    @include forMobile {
+      padding-top: VW(100, $mobile);
+    }  
+  }
+}
+
+.results-slide {
+  width: VW(400);
+  margin: 0 1vw;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  
+  @include forMobile {
+    width: VW(300, $mobile);
+    margin: 0 ;
+  }
+
+  @include hover {
+    .result-card {
+      opacity: 0.5;
+    }
+    .results-slide__bg {
+      opacity: 0.3;
+      transition: opacity 0.5s !important;
+    }
+  }
+
+  .result-card {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+  }
+
+  &.swiper-slide-active {
+    cursor: default;
+
+    .result-card {
+      opacity: 1 !important;
+    }
+    .results-slide__bg {
+      opacity:0.8 !important;
+    }
+  }
+
+  &__bg {
+    width: VW(370);
+    height: VW(370);
+    position: absolute;
+    z-index: -2;
+    border-radius: 100vw;
+    filter: blur(10vw);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    top: -5%;
+
+    @include forMobile {
+      width: VW(180, $mobile);
+      height: VW(180, $mobile);
+      filter: blur(15vw);
+      left: 25%;
+      top: -5%;
+    }
+  }
+}

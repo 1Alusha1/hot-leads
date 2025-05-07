@@ -1,0 +1,584 @@
+{
+  "en": {
+    "seo": {
+      "documentTitle": "RTRTS TEMPLATE",
+      "documentKeywords": "nextjs, next.js, creative, creative development, framer-motion",
+      "documentDescription": "the ideal template for creative work, featuring stunning components and fluid functionality on nextjs.",
+      "documentImage": "/images/screenshot.png"
+    },
+    "hero": {
+      "title": {
+        "top": "partners",
+        "main": "HOT-LEADS",
+        "description": "Hot leads opening the door to record-breaking revenues",
+        "button": "contact us"
+      },
+      "list": [
+        {
+          "top": "earnings from leads",
+          "title": "guaranteed",
+          "image": "/images/hero/list-1.webp"
+        },
+        {
+          "top": "all countries",
+          "title": "Any volume",
+          "image": "/images/hero/list-2.webp"
+        },
+        {
+          "top": "long-term relationships",
+          "title": "stability",
+          "image": "/images/hero/list-3.webp"
+        }
+      ]
+    },
+    "aboutService": {
+      "title": "sell",
+      "list": [
+        {
+          "title": "Stability",
+          "text": "<b> Hot Leads </b> has <b> successfully sold </b> traffic in the FX market for <b> many years </b> and knows exactly how to build <b> mutually beneficial relationships </b> with partners that bring profit to both sides."
+        },
+        {
+          "title": "Reliability",
+          "text": "We work with a <b> large network of brands, </b> which allows us to offer the <b>most profitable terms.</b>"
+        },
+        {
+          "big": true,
+          "title": "Quality",
+          "text": "It's beneficial to work with us because we <b> fully take over </b> the lead selling process. You only need to drive traffic, while <b> your earnings skyrocket!</b> <br/> Earn from leads with the most exclusive conditions!"
+        }
+      ],
+      "button": {
+        "text": "Order a test campaign",
+        "link": "/"
+      }
+    },
+    "ctaSection": {
+      "title": ["trusting lead sales ", "to us is your best","decision"],
+      "backButton": "back",
+      "list": [
+        {
+          "image": "/images/buysell/sell1.png",
+          "title": "90% total validity thanks to a large pool of brands"
+        },
+        {
+          "image": "/images/buysell/sell2.png",
+          "title": "All geos and languages available in unlimited volume"
+        },
+        {
+          "image": "/images/buysell/sell3.png",
+          "title": "Customized traffic for each partner"
+        }
+      ],
+      "button": {
+        "text": "Order a test campaign",
+        "link": "/"
+      }
+    },
+    "results": {
+      "title": "Results",
+      "list": [
+        {
+          "type": "sell",
+          "top": {
+            "type": "doubleTitle",
+            "title": {
+              "topTitle": "<span class=\"white\">Cap</span> for Media Buyers <span class=\"white\">on</span> Native <span class=\"white\"> Spain </span>",
+              "mainTitle": false,
+              "secondTitle": "+$260,000"
+            }
+          },
+          "text": [
+            {
+              "type": "doubleText",
+              "first": {
+                "title": "[Request]",
+                "content": "400 LPD on CPA for native Spain traffic from our network of brands."
+              },
+              "second": {
+                "title": "[Solution]",
+                "content": "We provided ready-made funnels and creatives for quick launch."
+              }
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "We selected the 3 best teams, tested each one, and kept the 2 strongest. We switched to CPL $110 and scaled up the traffic."
+            },
+            {
+              "type": "list",
+              "title": "One month results",
+              "list": [
+                "6,500 leads, 5,200 valid → $572,000 revenue",
+                "Expenses: $312,000",
+                "Net profit: $260,000",
+                "ROI: 83.3%"
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": "We provided the setup, expanded the volume, sold every lead. Media buyers earned $260,000.",
+              "content": "<span class=\"line-highlight\">Trust your lead sales to us</span> — we'll sell every lead and maximize your business profits."
+            }
+          ]
+        },
+        {
+          "type": "sell",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "<span class=\"white\">sales</span> volumes <span class=\"white\">increased</span> by more than <span class=\"white\"> 20 times </span>",
+              "mainTitle": false,
+              "image": "/images/results/Sell/sell-1.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": "[Challenge]",
+              "content": "A media buying team had a setup they couldn't scale. They had one client who bought little and had high duplication rates."
+            },
+            {
+              "type": "textFull",
+              "title": "[Solution]",
+              "content": "We noticed the potential of their offer - the traffic was targeted. Three brands from our network successfully work with their funnel, and we built conditions that satisfied both parties."
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "<span class=\"white\">Currently, this media buyer's sales volumes have grown more than 20 times.</span><br/>Additionally, as long-time experts in media buying, we continue to actively help and provide recommendations, which maintains high quality with consistently large caps, meeting the needs of each brand."
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "Do you need to scale your setup? We'll help you make it happen.<br /><span class=\"white\">Trust your lead sales to us</span>"
+            }
+          ]
+        },
+        {
+          "type": "sell",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "ROI",
+              "mainTitle": "+100%",
+              "image": "/images/results/Sell/sell-2.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "We increased a media buyer's monthly profit 10 times. By connecting our pool of brands, the media buyer was able to significantly increase traffic volumes and triple their team size."
+            },
+            {
+              "type": "list",
+              "title": "[Results]",
+              "list": [
+                "More than 25 permanent caps for Tier 3, plus",
+                "eng/ru EU. With a total volume of 1700-2500 LPD",
+                "ROI: from 100%",
+                "Total validity from 70%",
+                "Due to PV growth, CPL for Lead always increases by 15%",
+                "Highest CPL payout among networks!"
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "Want to scale your business with maximum returns? - <span class=\"white\">Trust your lead sales to us</span>"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "ru": {
+    "seo": {
+      "documentTitle": "RTRTS TMPLATE",
+      "documentKeywords": "nextjs, next.js, creative, creative development, framer-motion",
+      "documentDescription": "the ideal template for creative work, featuring stunning components and fluid functionality on nextjs.",
+      "documentImage": "/images/screenshot.png"
+    },
+    "hero": {
+      "title": {
+        "top": "partners",
+        "main": "HOT-LEADS",
+        "description": "Горячие лиды открывающие дверь в мир рекордных доходов",
+        "button": "напишите нам"
+      },
+      "list": [
+        {
+          "top": "заработок с лидов",
+          "title": "гарантировано",
+          "image": "/images/hero/list-1.webp"
+        },
+        {
+          "top": "все страны",
+          "title": "Любые объёмы",
+          "image": "/images/hero/list-2.webp"
+        },
+        {
+          "top": "долгосрочные отношения ",
+          "title": "стабильность ",
+          "image": "/images/hero/list-3.webp"
+        }
+      ]
+    },
+    "aboutService": {
+      "title": "sell",
+      "list": [
+        {
+          "title": "Стабильность",
+          "text": "<b> Hot Leads </b> - уже <b> много лет успешно </b> продает трафик на FX рынке и точно знает, как выстраивать <b> взаимовыгодные отношения </b> с партнерами, которые приносят прибыль обеим сторонам."
+        },
+        {
+          "title": "Надежность",
+          "text": "Мы работаем с <b> большой сетью брендов, </b> что позволяет нам предлагать самые <b>прибыльные условия.</b>"
+        },
+        {
+          "big": true,
+          "title": "Качество",
+          "text": "Вам выгодно работать с нами, потому что мы <b> полностью берем на себя </b> кпроцесс продажи лидов. Вам остается лишь лить трафик, в то время как <b> ваш заработок летит в космос!</b> <br/> Зарабатывай с лидов по самым эксклюзивным условиям!"
+        }
+      ],
+      "button": {
+        "text": "Заказать тестовый пролив",
+        "link": "/"
+      }
+    },
+    "ctaSection": {
+      "title": ["доверить продажу ", "лидов нам — ваше лучшее","решение"],
+      "backButton": "назад",
+      "list": [
+        {
+          "image": "/images/buysell/sell1.png",
+          "title": "90% валидности с тотала, благодаря большого пулу брендов "
+        },
+        {
+          "image": "/images/buysell/sell2.png",
+          "title": "Есть все гео и языки на потоке в неограниченном объеме"
+        },
+        {
+          "image": "/images/buysell/sell3.png",
+          "title": "Индивидуальный трафик для каждого партнера"
+        }
+      ],
+      "button": {
+        "text": "Заказать тестовый пролив",
+        "link": "/"
+      }
+    },
+    "results": {
+      "title": "Результаты",
+      "list": [
+        {
+          "type": "sell",
+          "top": {
+            "type": "doubleTitle",
+            "title": {
+              "topTitle": "<span class=\"white\">Капа</span> для Баингов <span class=\"white\">по</span> натив <span class=\"white\"> Испании </span>",
+              "mainTitle": false,
+              "secondTitle": "+$260,000"
+            }
+          },
+          "text": [
+            {
+              "type": "doubleText",
+              "first": {
+                "title": "[Запрос]",
+                "content": "400 LPD по CPA на натив Испанию от нашей сети брендов."
+              },
+              "second": {
+                "title": "[Решение]",
+                "content": "Предоставили готовые воронки и креативы для быстрого запуска."
+              }
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "Отобрали 3 лучших команды, протестировали каждую, оставили 2 сильнейших. Перевели на CPL $110 и масштабировали трафик."
+            },
+            {
+              "type": "list",
+              "title": "Результат за месяц",
+              "list": [
+                "6,500 лидов, 5,200 валидных → $572,000 выручки",
+                "Расходы: $312,000",
+                "Чистая прибыль: $260,000",
+                "ROI: 83.3%"
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": "Предоставили связку, Разогнали обьем, Продали каждого лида. Баинги заработали $260,000.",
+              "content": "<span class=\"line-highlight\">Доверь продажу лидов нам</span> — мы продадим каждого лида и выведем ваш бизнес на максимальную прибыль."
+            }
+          ]
+        },
+        {
+          "type": "sell",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "<span class=\"white\">объемы</span> продаж баинга<span class=\"white\"> выросли</span> более чем <span class=\"white\"> в 20 раз </span>",
+              "mainTitle": false,
+              "image": "/images/results/Sell/sell-1.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": "[Челендж]",
+              "content": "У медиабаинговой команды была связка которую они не могли масштабировать. У них был один клиент, который покупал мало, и при этом сильно дублил."
+            },
+            {
+              "type": "textFull",
+              "title": "[Решение]",
+              "content": "Мы заметили потенциал их оффера, трафик был целевым. Три бренда из нашей сети успешно работают с их воронкой,  мы выстроили условия, которые устроили обе стороны."
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "<span class=\"white\">На данный момент объемы продаж этого баинга выросли более чем в 20 раз.</span><br/>Кроме того, мы - как многолетние эксперты в медиабаинге, продолжаем активно помогать и давать рекомендации, что позволяет сохранять высокое качество при стабильно больших до капах, закрывая потребности каждого бренда."
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "Вам необходимо масштабировать свою связку? Мы поможем, вам это реализовать.<br /><span class=\"white\">Доверьте продаже лидов нам</span>"
+            }
+          ]
+        },
+        {
+          "type": "sell",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "ROI",
+              "mainTitle": "+100%",
+              "image": "/images/results/Sell/sell-2.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "Мы увеличили месячный профит медиабаингу в 10 раз. Благодаря подключению нашего пула брендов, медиабаинг смог существенно увеличить объемы трафика и в три раза расширить свою команду."
+            },
+            {
+              "type": "list",
+              "title": "[Результат]",
+              "list": [
+                "Более 25 постоянных кап по Tier 3, а также",
+                "eng/ru Eu. С общим объемом 1700-2500 LPD",
+                "ROI: от 100%",
+                "Валидность тотала от 70%",
+                "За счет роста PV всегда растает CPL за Лида на 15%",
+                "Самая высокая выплата по CPL среди нетворков!"
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "Хочешь масштабировать бизнес с максимальной отдачей? - <span class=\"white\">Доверь продажу лидов нам</span>"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "ua": {
+    "seo": {
+      "documentTitle": "RTRTS TMPLATE",
+      "documentKeywords": "nextjs, next.js, creative, creative development, framer-motion",
+      "documentDescription": "the ideal template for creative work, featuring stunning components and fluid functionality on nextjs.",
+      "documentImage": "/images/screenshot.png"
+    },
+    "hero": {
+      "title": {
+        "top": "partners",
+        "main": "HOT-LEADS",
+        "description": "Гарячі ліди, що відкривають двері у світ рекордних доходів",
+        "button": "напишіть нам"
+      },
+      "list": [
+        {
+          "top": "заробіток з лідів",
+          "title": "гарантовано",
+          "image": "/images/hero/list-1.webp"
+        },
+        {
+          "top": "всі країни",
+          "title": "Будь-які обсяги",
+          "image": "/images/hero/list-2.webp"
+        },
+        {
+          "top": "довгострокові відносини",
+          "title": "стабільність",
+          "image": "/images/hero/list-3.webp"
+        }
+      ]
+    },
+    "aboutService": {
+      "title": "sell",
+      "list": [
+        {
+          "title": "Стабільність",
+          "text": "<b> Hot Leads </b> - вже <b> багато років успішно </b> продає трафік на FX ринку і точно знає, як вибудовувати <b> взаємовигідні відносини </b> з партнерами, які приносять прибуток обом сторонам."
+        },
+        {
+          "title": "Надійність",
+          "text": "Ми працюємо з <b> великою мережею брендів, </b> що дозволяє нам пропонувати найбільш <b>прибуткові умови.</b>"
+        },
+        {
+          "big": true,
+          "title": "Якість",
+          "text": "Вам вигідно працювати з нами, тому що ми <b> повністю беремо на себе </b> процес продажу лідів. Вам залишається лише лити трафік, в той час як <b> ваш заробіток летить у космос!</b> <br/> Заробляй з лідів за найексклюзивнішими умовами!"
+        }
+      ],
+      "button": {
+        "text": "Замовити тестовий пролив",
+        "link": "/"
+      }
+    },
+    "ctaSection": {
+      "title": ["довірити продаж ", "лідів нам — ваше найкраще","рішення"],
+      "backButton": "назад",
+      "list": [
+        {
+          "image": "/images/buysell/sell1.png",
+          "title": "90% валідності з тоталу, завдяки великому пулу брендів"
+        },
+        {
+          "image": "/images/buysell/sell2.png",
+          "title": "Є всі гео та мови на потоці в необмеженому обсязі"
+        },
+        {
+          "image": "/images/buysell/sell3.png",
+          "title": "Індивідуальний трафік для кожного партнера"
+        }
+      ],
+      "button": {
+        "text": "Замовити тестовий пролив",
+        "link": "/"
+      }
+    },
+    "results": {
+      "title": "Результати",
+      "list": [
+        {
+          "type": "sell",
+          "top": {
+            "type": "doubleTitle",
+            "title": {
+              "topTitle": "<span class=\"white\">Капа</span> для Баїнгів <span class=\"white\">по</span> натив <span class=\"white\"> Іспанії </span>",
+              "mainTitle": false,
+              "secondTitle": "+$260,000"
+            }
+          },
+          "text": [
+            {
+              "type": "doubleText",
+              "first": {
+                "title": "[Запит]",
+                "content": "400 LPD по CPA на натив Іспанію від нашої мережі брендів."
+              },
+              "second": {
+                "title": "[Рішення]",
+                "content": "Надали готові воронки та креативи для швидкого запуску."
+              }
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "Відібрали 3 найкращі команди, протестували кожну, залишили 2 найсильніші. Перевели на CPL $110 і масштабували трафік."
+            },
+            {
+              "type": "list",
+              "title": "Результат за місяць",
+              "list": [
+                "6,500 лідів, 5,200 валідних → $572,000 виручки",
+                "Витрати: $312,000",
+                "Чистий прибуток: $260,000",
+                "ROI: 83.3%"
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": "Надали зв'язку, Розігнали обсяг, Продали кожного ліда. Баїнги заробили $260,000.",
+              "content": "<span class=\"line-highlight\">Довір продаж лідів нам</span> — ми продамо кожного ліда і виведемо ваш бізнес на максимальний прибуток."
+            }
+          ]
+        },
+        {
+          "type": "sell",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "<span class=\"white\">обсяги</span> продажів баїнгу<span class=\"white\"> зросли</span> більш ніж <span class=\"white\"> у 20 разів </span>",
+              "mainTitle": false,
+              "image": "/images/results/Sell/sell-1.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": "[Челендж]",
+              "content": "У медіабаїнгової команди була зв'язка, яку вони не могли масштабувати. У них був один клієнт, який купував мало, і при цьому сильно дублював."
+            },
+            {
+              "type": "textFull",
+              "title": "[Рішення]",
+              "content": "Ми помітили потенціал їхнього офера, трафік був цільовим. Три бренди з нашої мережі успішно працюють з їхньою воронкою, ми вибудували умови, які влаштували обидві сторони."
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "<span class=\"white\">На даний момент обсяги продажів цього баїнгу зросли більш ніж у 20 разів.</span><br/>Крім того, ми - як багаторічні експерти в медіабаїнгу, продовжуємо активно допомагати та давати рекомендації, що дозволяє зберігати високу якість при стабільно великих до капах, закриваючи потреби кожного бренду."
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "Вам необхідно масштабувати свою зв'язку? Ми допоможемо, вам це реалізувати.<br /><span class=\"white\">Довірте продажу лідів нам</span>"
+            }
+          ]
+        },
+        {
+          "type": "sell",
+          "top": {
+            "type": "titleImage",
+            "title": {
+              "topTitle": "ROI",
+              "mainTitle": "+100%",
+              "image": "/images/results/Sell/sell-2.png"
+            }
+          },
+          "text": [
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "Ми збільшили місячний профіт медіабаїнгу в 10 разів. Завдяки підключенню нашого пулу брендів, медіабаїнг зміг істотно збільшити обсяги трафіку і втричі розширити свою команду."
+            },
+            {
+              "type": "list",
+              "title": "[Результат]",
+              "list": [
+                "Більше 25 постійних кап по Tier 3, а також",
+                "eng/ru Eu. З загальним обсягом 1700-2500 LPD",
+                "ROI: від 100%",
+                "Валідність тоталу від 70%",
+                "За рахунок зростання PV завжди зростає CPL за Ліда на 15%",
+                "Найвища виплата по CPL серед нетворків!"
+              ]
+            },
+            {
+              "type": "textFull",
+              "title": false,
+              "content": "Хочеш масштабувати бізнес з максимальною віддачею? - <span class=\"white\">Довір продаж лідів нам</span>"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

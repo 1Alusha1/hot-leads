@@ -1,0 +1,260 @@
+.button {
+  display: flex;
+  gap: VW(30);
+  align-items: center;
+  -webkit-backdrop-filter: blur(VW(24));
+  backdrop-filter: blur(VW(24));
+  border-radius: 100vw;
+  padding: VW(6) VW(11) VW(6) VW(24);
+  overflow: hidden;
+  transition: color 0.3s 0.2s ease;
+
+  width: fit-content;
+
+  background: rgba(255, 36, 0, 0.5);
+  border: 1px solid #ffffff;
+
+  @include forTablet {
+    gap: VW(30, $tablet);
+  }
+
+  @include forMobile {
+    padding: VW(10, $mobile) VW(11, $mobile) VW(10, $mobile) VW(20, $mobile);
+    -webkit-backdrop-filter: blur(20vw);
+    backdrop-filter: blur(20vw);
+  }
+
+  a {
+    font: inherit;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: VW(86);
+    width: VW(86);
+    inset: 0;
+    position: absolute;
+    z-index: -2;
+    background-color: #fff;
+    transform: scale(0);
+    transform-origin: right;
+    transition: all 0.5s $ExpoIn;
+  }
+
+  @include hover {
+    .flip {
+      transform: translateY(-60%) scale(1.05);
+
+      a:nth-of-type(1) {
+        rotate: 6deg !important;
+      }
+
+      a:nth-of-type(2) {
+        rotate: 0deg !important;
+      }
+    }
+
+    .arrow {
+      &__icon {
+        &:nth-of-type(2) {
+          left: 100%;
+          top: -100%;
+        }
+        &:nth-of-type(1) {
+          top: 0%;
+          left: 0%;
+        }
+      }
+    }
+
+    &::after {
+      transform: scale(1) translateY(0%);
+      transform-origin: top;
+      width: 100%;
+      height: 100%;
+      border-radius: 100vw;
+    }
+
+    color: $r-70;
+  }
+
+  &--green {
+    background: #00CF3C30 !important;
+    color: $c-white !important;
+
+    @include hover {
+      color: $green-100 !important;
+    }
+
+    .arrow {
+      stroke: $c-white !important;
+      transition: stroke 0.3s $ExpoIn;
+
+      &__wrapper {
+        background-color: $green-100 !important;
+        transition: background-color 0.3s $ExpoIn;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    line-height: 92%;
+    margin-bottom: 0;
+    text-wrap: nowrap;
+
+    .text-wrapper {
+      height: 1em;
+      overflow-y: clip;
+
+      @include forTablet {
+        height: VW(24, $tablet);
+      }
+
+      @include forMobile {
+        height: VW(16, $mobile);
+      }
+
+      .flip {
+        display: flex;
+        flex-direction: column;
+        gap: VW(10);
+        transition: transform 0.5s $ExpoIn;
+
+        a {
+          transition: rotate 0.3s $ExpoIn;
+          transform-origin: right;
+        }
+
+        a:nth-of-type(2) {
+          transform-origin: left;
+          rotate: 6deg;
+        }
+      }
+    }
+
+    &-line {
+      display: block;
+      position: absolute;
+      bottom: -10%;
+      width: 100%;
+      height: 0.2vw;
+      background-color: $c-white;
+      // transition: all 1s cubic-bezier(.79,-0.02,.17,1.02);
+    }
+  }
+
+  .arrow {
+    width: VW(15);
+    height: VW(17);
+    position: relative;
+    overflow: hidden;
+
+    @include forTablet {
+      width: VW(23, $tablet);
+      height: VW(20, $tablet);
+    }
+
+    @include forMobile {
+      width: VW(14, $mobile);
+      height: VW(11, $mobile);
+    }
+
+    &__wrapper {
+      height: VW(40);
+      width: VW(40);
+      background-color: $r-70;
+      border-radius: 100vw;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: -1;
+      pointer-events: none;
+
+      @include forTablet {
+        height: VW(56, $tablet);
+        width: VW(56, $tablet);
+      }
+
+      @include forMobile {
+        width: VW(30, $mobile);
+        height: VW(30, $mobile);
+      }
+    }
+
+    &__icon {
+      width: VW(16);
+      height: VW(16);
+      object-fit: contain;
+
+      position: absolute;
+
+      z-index: 1;
+      transition: 0.5s $ExpoIn;
+      transition-property: left, top;
+
+      @include forTablet {
+        width: VW(23, $tablet);
+        height: VW(20, $tablet);
+      }
+
+      @include forMobile {
+        width: VW(14, $mobile);
+        height: VW(11, $mobile);
+      }
+
+      &:nth-of-type(1) {
+        left: -100%;
+        top: 100%;
+      }
+      &:nth-of-type(2) {
+        top: 0%;
+        left: 0%;
+      }
+      // &:nth-of-type(1) {
+      //   left: 0%;
+      // }
+      // &:nth-of-type(2) {
+      //   left: 100%;
+      // }
+    }
+  }
+}
+
+.button_secondary {
+  background: $c-white !important;
+  border: VW(4) solid $r-70;
+  color: $r-70;
+
+  &::after {
+    background-color: $r-70;
+  }
+  // 6 7 6 11
+  @include forMobile {
+    padding: VW(6, $mobile) VW(7, $mobile) VW(6, $mobile) VW(11, $mobile);
+  }
+
+  @include hover {
+    color: $c-white;
+
+    .arrow {
+      stroke: $r-70;
+      &__wrapper {
+        background-color: $c-white;
+      }
+    }
+  }
+
+  .arrow {
+    stroke: $c-white;
+    transition: stroke 0.3s $ExpoIn;
+
+    &__wrapper {
+      background-color: $r-70;
+      transition: background-color 0.3s $ExpoIn;
+    }
+  }
+}
