@@ -29,17 +29,6 @@ export default function Header({ type }) {
     async function fetchData() {
       try {
         const result = await getFetchData(URL_HEADER);
-        console.log(URL_HEADER, "URL_HEADER file: Header.jsx");
-        console.log(
-          result,
-          lang,
-          path,
-          "result and lang and path file: Header.jsx"
-        );
-        console.log(
-          useLanguageContent(result, lang),
-          "useLanguageContent(result, lang) file: Header.jsx"
-        );
         setData(useLanguageContent(result, lang));
       } catch (error) {
         console.error("Error fetching header data:", error);
@@ -52,7 +41,6 @@ export default function Header({ type }) {
   const getLanguagePath = (targetLang, currentPath) => {
     // Handle root path special case
     if (currentPath === "/" || currentPath === "/ua" || currentPath === "/ru") {
-      console.log(targetLang, currentPath, "targetLang,currentPath");
       return targetLang === "en" ? "/" : `/${targetLang}`;
     }
 

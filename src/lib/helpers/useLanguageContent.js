@@ -1,10 +1,6 @@
 // getLanguageContent.js
 // export function useLanguageContent(content, lang, defaultLang = 'en') {
 export function useLanguageContent(content, lang = "en") {
-  console.log(
-    content,
-    "useLanguageContent(content, lang = 'en') file:useLanguageContent.js "
-  );
   if (!content || typeof content !== "object") {
     console.warn("Invalid content provided to getLanguageContent");
     return null;
