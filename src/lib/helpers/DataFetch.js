@@ -8,6 +8,7 @@ export async function getFetchData(apiUrl) {
     console.log(apiUrl);
 
     if (!response.ok) {
+      console.log(response)
       throw new Error(`Error: ${response.status} ${response.statusText}`);
     }
     console.log(response, "response file:DataFetch");
