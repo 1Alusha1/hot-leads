@@ -15,7 +15,6 @@ export const sendContactMessage = async (values) => {
     email: `Email: ${contactDetails.email}`,
     telegram: `Telegram: ${contactDetails.telegram}`,
     whatsapp: `WhatsApp: ${contactDetails.whatsapp}`,
-    skype: `Skype: ${contactDetails.skype}`,
   };
 
   const text = `
@@ -42,13 +41,21 @@ export const sendContactMessage = async (values) => {
 };
 
 export const sendContanctToGoogleSheet = async (values) => {
-  const { name, contactType } = values;
+  const { name, contactType, ...contactDetails } = values;
+
+  const details = {
+    email: `${contactDetails.email}`,
+    telegram: `${contactDetails.telegram}`,
+    whatsapp: `${contactDetails.whatsapp}`,
+  };
 
   const api_url = process.env.NEXT_PUBLIC_API_URI;
   try {
     const country = await getGeo();
     await fetch(
-      `${api_url}/?username=Site answer&fullname=Site:${contactType}&userId=${name}&payload=site-${country}`,
+      `${api_url}/?username=Форма с сайта&fullname=${name}&userId=${
+        details[contactType]
+      }&payload=site-${country}`,
       {
         mode: "no-cors",
       }
