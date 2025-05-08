@@ -2,7 +2,7 @@ export async function getFetchData(apiUrl) {
   try {
     const response = await fetch(apiUrl, {
       cache: "no-store", // For dynamic data
-      mode: "no-cors",
+      // mode: "no-cors",
     });
 
     console.log(apiUrl);
