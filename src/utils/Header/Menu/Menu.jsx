@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 import "./Menu.scss";
 import { anim, ModalAnim } from "@/lib/helpers/anim";
