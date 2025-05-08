@@ -10,7 +10,7 @@ export async function getFetchData(apiUrl) {
     if (!response.ok) {
       throw new Error(`Error: ${response.status} ${response.statusText}`);
     }
-
+    console.log(response, "response file:DataFetch");
     return response.json();
   } catch (error) {
     console.error("Error fetching data:", error);
