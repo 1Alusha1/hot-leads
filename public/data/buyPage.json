@@ -39,13 +39,13 @@
           "text": "Work directly with media buying and get <b>the hottest</b> leads for your brand. <b>Traffic G is a media buying service with an individual approach</b> to each partner."
         },
         {
-          "title": "Quality",
-          "text": "<b>We'll help you achieve maximum results</b> thanks to our experience and professionalism. Convinced? - Order a test flow"
-        },
-        {
           "big": true,
           "title": "Expertise",
           "text": "Including our <b>sales marketing department</b> that creates successful strategies, and our leading funnel development department. Together with the most innovative design department in the world - we do everything to ensure you <b>earn from the highest quality traffic in the entire market.</b>"
+        },
+        {
+          "title": "Quality",
+          "text": "<b>We'll help you achieve maximum results</b> thanks to our experience and professionalism. Convinced? - Order a test flow"
         }
       ],
       "button": {
@@ -217,13 +217,13 @@
           "text": "Работайте напрямую с медиабаингом и получайте <b> самые горячие </b> лиды для вашего бренда. <b> Traffic G - медиабаинг с индивидуальным подходом </b> к каждому партнеру."
         },
         {
-          "title": "Качество",
-          "text": "<b>Мы поможем вам достичь максимальных результатов </b> лблагодаря нашему опыту и профессионализму. Убедительно? - Закажи тестовый пролив"
-        },
-        {
           "big": true,
           "title": "Экспертиза",
           "text": "Включая наш <b> продающий маркетинговый отдел </b> который создает успешные стратегии, лидирующий отдел разработки воронок. Совместно с самым инновационным дизайн-отделом в мире - делает все, чтобы вы . <b> зарабатывали на самом качественном трафике во всем рынке."
+        },
+        {
+          "title": "Качество",
+          "text": "<b>Мы поможем вам достичь максимальных результатов </b> лблагодаря нашему опыту и профессионализму. Убедительно? - Закажи тестовый пролив"
         }
       ],
       "button": {
@@ -395,13 +395,13 @@
           "text": "Працюйте безпосередньо з медіабаїнгом і отримуйте <b>найгарячіші</b> ліди для вашого бренду. <b>Traffic G - медіабаїнг з індивідуальним підходом</b> до кожного партнера."
         },
         {
-          "title": "Якість",
-          "text": "<b>Ми допоможемо вам досягти максимальних результатів</b> завдяки нашому досвіду та професіоналізму. Переконливо? - Замовте тестовий пролив"
-        },
-        {
           "big": true,
           "title": "Експертиза",
           "text": "Включаючи наш <b>продаючий маркетинговий відділ</b>, який створює успішні стратегії, провідний відділ розробки воронок. Спільно з найбільш інноваційним дизайн-відділом у світі - робимо все, щоб ви <b>заробляли на найякіснішому трафіку на всьому ринку.</b>"
+        },
+        {
+          "title": "Якість",
+          "text": "<b>Ми допоможемо вам досягти максимальних результатів</b> завдяки нашому досвіду та професіоналізму. Переконливо? - Замовте тестовий пролив"
         }
       ],
       "button": {
@@ -430,7 +430,6 @@
         "text": "Замовити тестовий пролив",
         "link": "/"
       }
-
     },
     "results": {
       "title": "Результати",

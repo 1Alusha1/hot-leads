@@ -115,6 +115,7 @@
       &__link {
         display: flex;
         align-items: end;
+        align-items: center;
         gap: VW(10);
         
         @include forMobile {

@@ -1,4 +1,5 @@
 import axios from "axios";
+import getGeo from "./getGeo";
 
 export const sendContactMessage = async (values) => {
   const { name, contactType, ...contactDetails } = values;
@@ -7,7 +8,6 @@ export const sendContactMessage = async (values) => {
   const chatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID;
 
   // console.log('botToken', botToken, 'chatId', chatId);
-  
 
   const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
@@ -16,10 +16,12 @@ export const sendContactMessage = async (values) => {
     telegram: `Telegram: ${contactDetails.telegram}`,
     whatsapp: `WhatsApp: ${contactDetails.whatsapp}`,
     skype: `Skype: ${contactDetails.skype}`,
-  }
+  };
 
   const text = `
-    New message from ${name} \n\nContact Type: ${contactType.toUpperCase()} \n\n${details[contactType]}
+    New message from ${name} \n\nContact Type: ${contactType.toUpperCase()} \n\n${
+    details[contactType]
+  }
   `;
 
   try {
@@ -30,11 +32,28 @@ export const sendContactMessage = async (values) => {
     });
 
     if (response.data.ok) {
-      console.log('Message sent successfully!');
+      console.log("Message sent successfully!");
     } else {
-      console.error('Failed to send message.');
+      console.error("Failed to send message.");
     }
   } catch (error) {
-    console.error('Error sending message to Telegram:', error);
+    console.error("Error sending message to Telegram:", error);
+  }
+};
+
+export const sendContanctToGoogleSheet = async (values) => {
+  const { name, contactType } = values;
+
+  const api_url = process.env.NEXT_PUBLIC_API_URI;
+  try {
+    const country = await getGeo();
+    await fetch(
+      `${api_url}/?username=Site answer&fullname=Site:${contactType}&userId=${name}&payload=site-${country}`,
+      {
+        mode: "no-cors",
+      }
+    );
+  } catch (err) {
+    console.error("Error writing record to Google sheet:", error);
   }
 };

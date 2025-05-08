@@ -12,18 +12,13 @@
       "socials": [
         {
           "title": "telegram",
-          "link": "https://t.me/itmo",
+          "link": "tg://resolve?domain=hot_leads_trafficg_bot&start=site",
           "icon": "/images/socials/tg.svg"
         },
         {
-          "title": "Skype",
-          "link": "https://Skype.me/itmo",
-          "icon": "/images/socials/skype.svg"
-        },
-        {
-          "title": "Email",
-          "link": "mailto:",
-          "icon": "/images/socials/mail.svg"
+          "title": "WhatsApp",
+          "link": "https://api.whatsapp.com/send/?phone=420722242996",
+          "icon": "/images/socials/whatsapp.svg"
         }
       ],
       "policy": [
@@ -51,18 +46,13 @@
       "socials": [
         {
           "title": "telegram",
-          "link": "https://t.me/itmo",
+          "link": "tg://resolve?domain=hot_leads_trafficg_bot&start=site",
           "icon": "/images/socials/tg.svg"
         },
         {
-          "title": "Skype",
-          "link": "https://Skype.me/itmo",
-          "icon": "/images/socials/skype.svg"
-        },
-        {
-          "title": "Email",
-          "link": "mailto:",
-          "icon": "/images/socials/mail.svg"
+          "title": "WhatsApp",
+          "link": "https://api.whatsapp.com/send/?phone=420722242996",
+          "icon": "/images/socials/whatsapp.svg"
         }
       ],
       "policy": [
@@ -90,18 +80,13 @@
       "socials": [
         {
           "title": "telegram",
-          "link": "https://t.me/itmo",
+          "link": "tg://resolve?domain=hot_leads_trafficg_bot&start=site",
           "icon": "/images/socials/tg.svg"
         },
         {
-          "title": "Skype",
-          "link": "https://Skype.me/itmo",
-          "icon": "/images/socials/skype.svg"
-        },
-        {
-          "title": "Email",
-          "link": "mailto:",
-          "icon": "/images/socials/mail.svg"
+          "title": "WhatsApp",
+          "link": "https://api.whatsapp.com/send/?phone=420722242996",
+          "icon": "/images/socials/whatsapp.svg"
         }
       ],
       "policy": [

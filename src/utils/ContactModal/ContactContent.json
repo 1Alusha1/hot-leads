@@ -1,19 +1,44 @@
 {
   "en": {
+    "title": "Submit your application",
+    "form": {
+      "nameInput": {
+        "placeholder": "Name",
+        "error": "Enter your name"
+      },
+      "telegramInput": {
+        "placeholder": "@Messenger login",
+        "error": "Enter your username"
+      },
+      "whatsappInput": {
+        "placeholder": "WhatsApp",
+        "error": "Enter WhatsApp"
+      },
+      "skypeInput": {
+        "placeholder": "Skype",
+        "error": "Enter Skype"
+      },
+      "emailInput": {
+        "placeholder": "Email",
+        "error": "Enter your email"
+      },
+      "submitButton": "Submit"
+    }
+  },
+  "ru": {
     "title": "Оставьте заявку",
     "form": {
       "nameInput": {
         "placeholder": "Имя",
         "error": "Введите имя"
       },
-
       "telegramInput": {
-        "placeholder": "@Messengerlogin",
+        "placeholder": "@Логин мессенджера",
         "error": "Введите никнейм"
       },
       "whatsappInput": {
-        "placeholder": "Whatsapp",
-        "error": "Введите whatsapp"
+        "placeholder": "WhatsApp",
+        "error": "Введите WhatsApp"
       },
       "skypeInput": {
         "placeholder": "Skype",
@@ -23,7 +48,33 @@
         "placeholder": "Email",
         "error": "Введите email"
       },
-      "submitButton": "Oтправить"
+      "submitButton": "Отправить"
+    }
+  },
+  "ua": {
+    "title": "Залиште заявку",
+    "form": {
+      "nameInput": {
+        "placeholder": "Ім'я",
+        "error": "Введіть ім'я"
+      },
+      "telegramInput": {
+        "placeholder": "@Логін месенджера",
+        "error": "Введіть нікнейм"
+      },
+      "whatsappInput": {
+        "placeholder": "WhatsApp",
+        "error": "Введіть WhatsApp"
+      },
+      "skypeInput": {
+        "placeholder": "Skype",
+        "error": "Введіть Skype"
+      },
+      "emailInput": {
+        "placeholder": "Email",
+        "error": "Введіть email"
+      },
+      "submitButton": "Відправити"
     }
   }
 }

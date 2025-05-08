@@ -11,14 +11,14 @@ import fullData from "./ContactContent.json";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { anim, animModal } from "@/lib/helpers/anim";
-import { sendContactMessage } from "@/lib/helpers/contact";
+import { sendContactMessage, sendContanctToGoogleSheet } from "@/lib/helpers/contact";
 
 export default function ContactModal({ isActive, setIsActive }) {
   const [contactType, setContactType] = useState("telegram");
   const [submitted, setSubmitted] = useState(false);
   const { lang } = useContext(LocaleContext);
   const data = useLanguageContent(fullData, lang);
-
+  console.log(lang)
   const getValidationSchema = (contactType) => {
     const baseSchema = {
       name: Yup.string().required(data?.form.nameInput.error),
@@ -47,19 +47,23 @@ export default function ContactModal({ isActive, setIsActive }) {
 
     try {
       await sendContactMessage({ ...values, contactType });
+      await sendContanctToGoogleSheet({ ...values, contactType });      
     } catch (error) {
-      console.error('Error sending message.', error);
+      console.error("Error sending message.", error);
     }
   };
 
   return (
     <>
-      <motion.div className="contact-background" {...anim(animModal.wrapperPresence)} />
+      <motion.div
+        className="contact-background"
+        {...anim(animModal.wrapperPresence)}
+      />
       <motion.div className="contact" {...anim(animModal.wrapperPresence)}>
         <h1 className="fz--30 fz--mobile-25">{data.title}</h1>
         <div
           className="contact__back-button"
-          onClick={() => setIsActive({ isActive: false, type: "" })}  
+          onClick={() => setIsActive({ isActive: false, type: "" })}
         >
           <svg
             className="contact__back-button-icon"

@@ -29,8 +29,8 @@ export default function LinkPage({ lang, data }) {
         </div>
         <h1
           className={classNames("hero__title", {
-            "fz--100 fz--mobile-30": lang === "ru" || lang === "ua",
-            "fz--80 fz--mobile-30": lang === "en",
+            "fz--100 fz--mobile-24": lang === "ru" || lang === "ua",
+            "fz--80 fz--mobile-24": lang === "en",
           })}
         >
           {data?.title}

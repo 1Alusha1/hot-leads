@@ -21,7 +21,6 @@ export default function Header({ type }) {
   const isDesktop = useIsDesktop();
   const { isActiveModal, setisActiveModal } = useContext(ModalContext);
   const [isMenuActive, setIsMenuActive] = useState(false);
-
   const path = usePathname();
   const { lang } = useContext(LocaleContext);
 
@@ -156,6 +155,7 @@ export default function Header({ type }) {
                   isActive={isMenuActive}
                   setIsActive={setIsMenuActive}
                   data={data}
+                  geo={geo}
                 />
               )}
             </AnimatePresence>

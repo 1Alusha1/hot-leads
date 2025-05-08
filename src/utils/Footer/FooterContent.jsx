@@ -1,6 +1,6 @@
 "use client";
 import { DataContext } from "@/lib/providers/DataProvider/context";
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Button } from "../Button/Button";
 import { HoverAnim } from "../HoverAnim/HoverAnim";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import Link from "next/link";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { footerAnim, presenceAnim } from "@/lib/helpers/anim";
 import classNames from "classnames";
+import getGeo from "@/lib/helpers/getGeo";
 
 export default function FooterContent({ type }) {
   const { data } = useContext(DataContext);
@@ -19,6 +20,12 @@ export default function FooterContent({ type }) {
     offset: ["0% 100%", "40% 100%"],
     layoutEffect: false,
   });
+
+  const [geo, setGeo] = useState();
+
+  useEffect(() => {
+    getGeo(setGeo)
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     if (!isAnimated && latest === 1) {
@@ -33,7 +40,11 @@ export default function FooterContent({ type }) {
         className="footer__image"
       >
         <Image
-          src={type === "buy" ? "/images/footer/footer-buy.webp" : "/images/footer/footer.webp"}
+          src={
+            type === "buy"
+              ? "/images/footer/footer-buy.webp"
+              : "/images/footer/footer.webp"
+          }
           fill
           alt="footer"
         />
@@ -150,7 +161,15 @@ export default function FooterContent({ type }) {
               key={index}
             >
               <Image src={item.icon} alt={item.title} width={30} height={30} />
-              <HoverAnim wrapperClass="" href={item.link} target="_blank">
+              <HoverAnim
+                wrapperClass=""
+                href={
+                  item.title === "telegram"
+                    ? `tg://resolve?domain=trafficg_hot_leads_bot&start=site-${geo}`
+                    : item.link
+                }
+                target="_blank"
+              >
                 {item.title}
               </HoverAnim>
             </motion.div>
