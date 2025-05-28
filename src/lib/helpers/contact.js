@@ -53,9 +53,9 @@ export const sendContanctToGoogleSheet = async (values) => {
   try {
     const country = await getGeo();
     await fetch(
-      `${api_url}/?username=Форма с сайта&fullname=${name}&userId=${
+      `${api_url}/record?username=Форма с сайта&fullname=${name}&userId=${
         details[contactType]
-      }&payload=site-${country}`,
+      }&payload=site-${country}&sheet=leads&tableId=11d5Iojvl_5NeFdrdmsQkC0N33_6CmiAI8xWJ7hGAUOI`,
       {
         mode: "no-cors",
       }
