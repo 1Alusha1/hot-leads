@@ -49,7 +49,7 @@
         }
       ],
       "button": {
-        "text": "Order a test campaign",
+        "text": "Sell leads",
         "link": "/"
       }
     },
@@ -71,7 +71,7 @@
         }
       ],
       "button": {
-        "text": "Order a test campaign",
+        "text": "Sell leads",
         "link": "/"
       }
     },
@@ -243,7 +243,7 @@
         }
       ],
       "button": {
-        "text": "Заказать тестовый пролив",
+        "text": "Продать лидов",
         "link": "/"
       }
     },
@@ -265,7 +265,7 @@
         }
       ],
       "button": {
-        "text": "Заказать тестовый пролив",
+        "text": "Продать лидов",
         "link": "/"
       }
     },
@@ -459,7 +459,7 @@
         }
       ],
       "button": {
-        "text": "Замовити тестовий пролив",
+        "text": "Продати Ліди",
         "link": "/"
       }
     },
