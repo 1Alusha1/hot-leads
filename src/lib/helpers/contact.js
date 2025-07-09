@@ -55,7 +55,7 @@ export const sendContanctToGoogleSheet = async (values) => {
     await fetch(
       `${api_url}/record?username=Форма с сайта&fullname=${name}&userId=${
         details[contactType]
-      }&payload=site-${country}&sheet=leads&tableId=11d5Iojvl_5NeFdrdmsQkC0N33_6CmiAI8xWJ7hGAUOI`,
+      }&payload=site-${country}&sheet=leads&tableId=1cOxxhBe0Rgw27C2Ittco9QeIon4-H3a3Ndh_Rwosy78`,
       {
         mode: "no-cors",
       }
