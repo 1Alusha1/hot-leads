@@ -43,6 +43,7 @@ export default function ContactModal({ isActive, setIsActive }) {
     console.log({ ...values, contactType });
     setSubmitting(false);
     setSubmitted(true);
+    fbq("track", "Lead");
     resetForm();
 
     try {
