@@ -1,5 +1,6 @@
 import axios from "axios";
 import getGeo from "./getGeo";
+import getUtmParams from "./getUtmParams";
 
 export const sendContactMessage = async (values) => {
   const { name, contactType, ...contactDetails } = values;
@@ -51,11 +52,13 @@ export const sendContanctToGoogleSheet = async (values) => {
 
   const api_url = process.env.NEXT_PUBLIC_API_URI;
   try {
+    const utm = getUtmParams();
+
     const country = await getGeo();
     await fetch(
       `${api_url}/record?username=Форма с сайта&fullname=${name}&userId=${
         details[contactType]
-      }&payload=site-${country}&sheet=leads&tableId=1cOxxhBe0Rgw27C2Ittco9QeIon4-H3a3Ndh_Rwosy78`,
+      }&payload=site-${country}&sheet=${utm.sheet}&tableId=${utm.tableId}`,
       {
         mode: "no-cors",
       }
