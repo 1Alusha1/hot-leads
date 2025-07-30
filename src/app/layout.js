@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
         const utmParams = {
           gId: params.get("gId"),
           gSend: params.get("gSend"),
-          pixel: params.get("pixel")
+          pixel: params.get("pixel"),
           tt: params.get('tt')
         };
 
