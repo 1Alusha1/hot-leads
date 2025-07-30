@@ -9,6 +9,7 @@ export default () => {
     tableId: params.get("tableId"),
     split: params.get("split"),
     chatId: params.get("chatId"),
+    ad:params.get("ad"),
   };
 
   Object.keys(utmParams).forEach((key) => {
